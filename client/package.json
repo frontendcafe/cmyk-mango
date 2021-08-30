@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/frontendcafe/cmyk-mango/issues"
   },
-  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme"
+  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
