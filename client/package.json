@@ -1,0 +1,23 @@
+{
+  "name": "cmyk-mango-client",
+  "version": "1.0.0",
+  "description": "Plataforma para coordinar horarios con otras personas de cualquier lugar del mundo",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendcafe/cmyk-mango.git"
+  },
+  "keywords": [
+    "cmyk",
+    "mango"
+  ],
+  "author": "Miembros de FrontendCafe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontendcafe/cmyk-mango/issues"
+  },
+  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme"
+}
