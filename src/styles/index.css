@@ -1,0 +1,22 @@
+:root {
+    --primary: #FFC324;
+    --primary-light: #F7D887;
+    --primary-dark: #B1830A;
+    --secondary: #62CBC5;
+    --secondary-light: #92D7D3;
+    --secondary-dark: #3C9191;
+    --black: #22302C;
+    --white: #FFFEF5;
+  }
+
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    
+    font-family: 'Work Sans', sans-serif;
+}
