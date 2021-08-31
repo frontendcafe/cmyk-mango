@@ -1,5 +1,5 @@
 {
-  "name": "cmyk-mango-client",
+  "name": "cmyk-mango",
   "version": "1.0.0",
   "description": "Plataforma para coordinar horarios con otras personas de cualquier lugar del mundo",
   "main": "src/index.js",

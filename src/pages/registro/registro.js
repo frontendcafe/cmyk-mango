@@ -1,0 +1,1 @@
+import "./registro.css";
