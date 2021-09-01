@@ -4,17 +4,6 @@
    
 }
 
-.container{
-    padding: 0 2rem;
-}
-
-.header{
-    background-color: var(--primary);
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .welcome{
     display: grid;
@@ -22,10 +11,6 @@
     gap:2rem;
     background-color: var(--secondary);
     min-height: 100vh; 
-}
-
-.logo{
-    font-family: 'Reem Kufi', sans-serif;
 }
 
 .brand{
@@ -68,9 +53,15 @@
 .btn-empty{
     border: 1px solid var(--black);
     width: 100%;
-
+    background-color: transparent;
     padding: 13px;
     border-radius: 8px;
+}
+
+.btn-yellow:hover, .btn-empty:hover{
+    background-color: var(--secondary);
+    color:var(--white);
+    border: none;
 }
 
 .img-logo{
@@ -83,16 +74,14 @@
     .img-logo{
         width: 40%;
     }
-    .btn-yellow .btn-empty{
-        width: 40%;
+    .btn-yellow, .btn-empty{
+        width: 50%;
     }
   }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .header{
-        display: none;
-    }
+    
     .welcome{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -103,8 +92,11 @@
         padding: 0 5rem;
     }
     .session h4{
-        width: 60%;
+        width: 90%;
         margin-bottom: 50px;
         font-weight: 600;
+    }
+    .btn-yellow, .btn-empty{
+        width: 90%;
     }
 }
