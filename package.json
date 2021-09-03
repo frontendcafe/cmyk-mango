@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/frontendcafe/cmyk-mango/issues"
   },
-  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme",
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme"
 }

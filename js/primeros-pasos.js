@@ -7,6 +7,3 @@ menu.addEventListener('click', function(e) {
     e.preventDefault();
     nav.classList.toggle('visible');
   });
-
-
-
