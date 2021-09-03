@@ -4,8 +4,7 @@
   "description": "Plataforma para coordinar horarios con otras personas de cualquier lugar del mundo",
   "main": "src/index.js",
   "scripts": {
-    "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html",
+    "dev": "echo \"Usar la extensión Live Server de VS Code para levantar el servidor\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
