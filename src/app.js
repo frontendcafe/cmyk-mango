@@ -1,4 +1,3 @@
-import "normalize.css";
 import "./styles/index.css";
 import * as paginas from "./pages";
 
