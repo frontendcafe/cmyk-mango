@@ -111,7 +111,9 @@ body{
         color: var(--secondary-dark);
     }
 
-    
+    .menu li.active {
+        border-bottom: 3px solid var(--primary);
+    }
 
 }
 
