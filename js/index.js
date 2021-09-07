@@ -1,4 +1,4 @@
-const IDS_SECCIONES = ["inicio", "formulario-login", "formulario-registro", "no-meeting", "list-meetings"];
+const IDS_SECCIONES = ["inicio", "formulario-login", "formulario-registro", "no-meeting"];
 
 let diccionarioDisplaySecciones = {};
 

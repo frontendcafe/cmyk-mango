@@ -1,0 +1,264 @@
+:root {
+  --primary: #ffc324;
+  --primary-light: #f7d887;
+  --primary-dark: #b1830a;
+  --secondary: #62cbc5;
+  --secondary-light: #92d7d3;
+  --secondary-dark: #3c9191;
+  --black: #22302c;
+  --white: #fffef5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--primary);
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.nav {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  list-style: none;
+  padding: 2rem;
+}
+
+.menu li {
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 1rem;
+}
+
+.menu li a {
+  color: var(--secondary-dark);
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: var(--black);
+}
+
+.reuniones-main {
+  display: grid;
+  gap: 2rem;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.session {
+  padding: 3.125rem 2rem;
+}
+
+.reuniones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 400;
+  height: 100%;
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.reuniones h4 {
+  font-family: "Reem Kufi", "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 28px;
+  padding: 0px;
+  margin: 0px auto 0px 0px;
+}
+
+.reuniones select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: url(../assets/img/select-arrow.svg) no-repeat right transparent;
+  width: 100%;
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+  color: var(--secondary-dark);
+  font-size: 1.125rem;
+  line-height: 28px;
+  padding: 7px 30px;
+}
+
+.reuniones-items {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.meeting-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-weight: 400;
+  height: 100%;
+  text-align: left;
+  padding: 0px;
+}
+
+.meeting-item-date {
+  color: var(--secondary-dark);
+  font-size: 0.875rem;
+  line-height: 22px;
+  padding-left: 10px;
+}
+
+.meeting-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 154px;
+  border: 1px solid #ffc324;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 5px 27px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.meeting-item-container .meeting-item-info {
+  flex: 80%;
+  line-height: 1.75rem;
+  color: var(--black);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.meeting-item-info .meeting-item-desc {
+  margin-bottom: 10px;
+}
+
+.meeting-item-desc .meeting-item-title {
+  font-size: 1.125rem;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.meeting-item-container .meeting-item-actions {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+#vote {
+  margin-bottom: 5px;
+}
+
+.meeting-item-container h5 {
+  font-size: 1.125rem;
+}
+
+.btn-secondary {
+  order: 98;
+  background-color: var(--secondary);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 22px;
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-empty {
+  order: 99;
+  border: 1px solid var(--primary-light);
+  color: var(--primary-light);
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 22px;
+  width: 100%;
+  background-color: transparent;
+  padding: 13px;
+  border-radius: 8px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .reuniones-main {
+    margin: auto;
+    max-width: 70vw;
+  }
+  .header {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    width: 50%;
+    background: transparent;
+  }
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu li {
+    padding-bottom: 1rem;
+    border-bottom: none;
+    font-size: 16px;
+  }
+  .menu li:first-child {
+    display: none;
+  }
+
+  .menu li a {
+    color: var(--black);
+  }
+  .menu li a:hover {
+    color: var(--secondary-dark);
+  }
+
+  .menu li.active {
+    border-bottom: 3px solid var(--primary);
+  }
+
+  .meeting-item-container {
+    padding: 30px 20px;
+  }
+}
