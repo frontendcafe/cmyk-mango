@@ -106,6 +106,10 @@ body {
   margin: 0px auto 0px 0px;
 }
 
+.reuniones .line {
+  display: none;
+}
+
 .reuniones select {
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
@@ -121,8 +125,11 @@ body {
 }
 
 .reuniones-items {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-bottom: auto;
+  justify-content: space-around;
 }
 
 .meeting-item {
@@ -150,7 +157,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 154px;
-  border: 1px solid #ffc324;
+  border: 1px solid var(--primary);
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -167,8 +174,8 @@ body {
   font-size: 14px;
 }
 
-.meeting-item-info .meeting-item-desc {
-  margin-bottom: 10px;
+.meeting-item-info .meeting-item-desc p:last-child {
+  margin-top: 10px;
 }
 
 .meeting-item-desc .meeting-item-title {
@@ -177,10 +184,25 @@ body {
   font-weight: normal;
 }
 
+.meeting-item-info .line-vertical {
+  display: none;
+}
+
 .meeting-item-container .meeting-item-actions {
   flex: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.meeting-item-actions .votes {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 #vote {
@@ -191,7 +213,11 @@ body {
   font-size: 1.125rem;
 }
 
-.btn-secondary {
+.btn-container {
+  width: 100%;
+}
+
+.btn-container .btn-secondary {
   order: 98;
   background-color: var(--secondary);
   font-weight: 500;
@@ -203,9 +229,10 @@ body {
   border-radius: 8px;
   color: black;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
-.btn-empty {
+.btn-container .btn-empty {
   order: 99;
   border: 1px solid var(--primary-light);
   color: var(--primary-light);
@@ -220,10 +247,6 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .reuniones-main {
-    margin: auto;
-    max-width: 70vw;
-  }
   .header {
     display: none;
   }
@@ -258,7 +281,105 @@ body {
     border-bottom: 3px solid var(--primary);
   }
 
+  .reuniones-main {
+    background-color: var(--white);
+    margin: auto;
+    max-width: 60vw;
+  }
+
+  .session {
+    background-color: white;
+  }
+
+  .reuniones h4 {
+    font-size: 3rem;
+    line-height: 55px;
+    margin: 0px auto 0px auto;
+  }
+
+  .reuniones .line {
+    margin-top: -15px;
+    border: 1px solid var(--secondary);
+    display: block;
+    width: 200px;
+  }
+
+  .reuniones select {
+    font-size: 1.75rem;
+    line-height: 35px;
+  }
+
+  .meeting-item-date {
+    font-size: 1.125rem;
+    line-height: 26px;
+    padding-left: 0px;
+  }
+
   .meeting-item-container {
-    padding: 30px 20px;
+    background-color: white;
+    border: 2px solid var(--secondary-dark);
+    padding: 10px 30px;
+  }
+
+  .meeting-item-container .meeting-item-info {
+    font-size: 1.125rem;
+    line-height: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 70%;
+  }
+
+  .meeting-item-info .meeting-item-desc {
+    flex: 40%;
+  }
+
+  .meeting-item-desc .meeting-item-title {
+    font-size: 1.75rem;
+    line-height: 35px;
+  }
+
+  .meeting-item-info .meeting-item-desc p:last-child {
+    margin-top: 20px;
+  }
+
+  .meeting-item-info .line-vertical {
+    flex: 20%;
+    margin-top: 40px;
+    border-left: 1px solid var(--secondary);
+    display: block;
+    height: 80px;
+  }
+
+  .meeting-item-info .meeting-item-obs {
+    flex: 30%;
+  }
+
+  .meeting-item-container .meeting-item-actions {
+    flex-direction: row;
+    flex: 30%;
+    justify-content: space-evenly;
+  }
+
+  .meeting-item-actions .votes {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .btn-container .btn-secondary {
+    width: 40%;
+  }
+
+  .btn-container .btn-empty {
+    width: 40%;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-dark);
+    color: var(--secondary-dark);
   }
 }
