@@ -1,0 +1,163 @@
+:root {
+    --primary: #FFC324;
+    --primary-light: #F7D887;
+    --primary-dark: #B1830A;
+    --secondary: #62CBC5;
+    --secondary-light: #92D7D3;
+    --secondary-dark: #3C9191;
+    --black: #22302C;
+    --white: #FFFEF5;
+  }
+
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    padding: 0 2rem;
+}
+
+/* Header */
+
+.header{
+    background-color: var(--primary);
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.nav{
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    list-style: none;
+    padding: 2rem;
+}
+
+.nav h2 {
+    visibility: hidden;
+}
+
+.menu li{
+    border-bottom: 1px solid var(--secondary);
+    padding-bottom: 1rem;
+}
+
+.menu li a{
+    color: var(--secondary-dark);
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: var(--black);
+}
+
+.menu li button {
+    display: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) { 
+    .header{
+        display: none;
+    }
+    
+    .nav{
+        visibility: visible; 
+        width: 100%;
+        background-color: var(--primary);
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .menu li{
+        padding-bottom: 1rem;
+        border-bottom: none;
+        font-size: 16px;
+        padding: 0px;
+    }
+    
+    .menu li:first-child {
+        display: none;
+    }
+    
+    .menu li a{
+        color: var(--black);
+    }
+
+    .menu li a:hover{
+        color: var(--secondary-dark);
+    }
+
+    .menu li button {
+        width: 85px;
+        height: 34px;
+        left: 1191px;
+        background: #62CBC5;
+        border-radius: 16px;
+        display: list-item;
+        border: none;
+    }
+
+    .nav h2 {
+        position: static;
+        width: 604px;
+        height: 61px;
+        left: 90px;
+        top: 18px;
+
+        font-family: Reem Kufi;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 22px;
+
+        display: flex;
+        align-items: center;
+
+        color: #22302C;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        margin: 0px 42px;
+
+        visibility: visible;
+    }
+
+}
+
+
