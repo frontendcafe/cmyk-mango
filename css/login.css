@@ -1,22 +1,28 @@
-.form-title {
+.form-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 200px;
+}
+.form__title {
     font-family: 'Reem Kufi', sans-serif;
     font-size: 48px;
     font-weight: 400;
-    margin: 65px 0;
 }
-
-.form-description {
+.form__description {
     font-size: 28px;
     font-weight: 400;
     color: var(--secondary-dark);
-    margin-bottom: 49px;
     
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 290px;
     width: 100%;
     max-width: 360px;
-    text-align: center;
 }
 
 .form-group {
@@ -25,7 +31,6 @@
 
 .form-group__input {
     width: 100%;
-    max-width: 320px;
     background: none;
     border: none;
     outline: 0px;
@@ -83,12 +88,12 @@
 
 /* Medium medium devices (992px and down) */
 @media (max-width: 992px) {
-    .form-title {
+    .form__title {
         font-size: 24px;
 
     }
 
-    .form-description {
+    .form__description {
         font-size: 16px;
         font-weight: 700;
     }
