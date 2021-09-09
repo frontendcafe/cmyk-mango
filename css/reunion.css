@@ -1,6 +1,6 @@
 
 
-.cont-img{
+.imagen-container{
     height: 252px;
     width: 100%;
     background-color: var(--primary-light);
@@ -132,7 +132,7 @@
     .message h3{
         align-self: center;
     }
-    .cont-img{
+    .imagen-container{
         height: 252px;
         display: flex;
         justify-content: center;
