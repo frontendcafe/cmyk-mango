@@ -1,9 +1,3 @@
-.ph-nav{
-    height: 60px;
-    background-color: var(--primary);
-    text-align: center;
-    color: gray;
-}
 
 
 .cont-img{
@@ -124,21 +118,10 @@
 }
 
 
-.ph-foot{
-    background-color: var(--primary);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    padding-bottom: 16px;
-    z-index:100;
-}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    .ph-nav{
-        height: 97px;
-    }
+    
     .message{
         display: flex;
         height: 252px;
