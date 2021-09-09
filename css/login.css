@@ -1,3 +1,8 @@
+#formulario-login{
+    background-color: var(--white);
+}
+
+
 .form-header{
     display: flex;
     flex-direction: column;
@@ -46,7 +51,7 @@
 
 .form-footer {
     display: flex;
-    justify-content: space-between
+    justify-content: center;
 }
 
 .link {
@@ -55,6 +60,7 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--primary-dark);
+    margin: 0 1em;
 }
 
 .link--margin {
@@ -84,6 +90,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    margin: 0 1em;
 }
 
 /* Medium medium devices (992px and down) */

@@ -1,7 +1,7 @@
 const formularioLogin = document.getElementById("formulario-login");
 formularioLogin.innerHTML = /* html */ `
   <div class="form-header">
-    <h3 class="form__title">¡Bievenidx!</h3>
+    <h1 class="form__title">¡Bienvenidx!</h1>
     <p class="form__description">Ingresa a tu cuenta</p>
   </div>
   <form action="#" class="form">
