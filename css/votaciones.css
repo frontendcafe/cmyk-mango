@@ -6,8 +6,6 @@
 }
 
 .datos-reunion{
-    
-    margin: 1rem;
     border-radius: 1rem;
     padding: 1rem;
     border: 1px solid var(--secondary);
@@ -15,6 +13,12 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items:flex-start;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
 }
 
 .divider{
@@ -76,15 +80,14 @@
     font-weight: 200;
     color: var(--black);
 }
-.btn{
-    border: none;
-    background-color: var(--secondary);
-    min-width: 120px;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    text-align: center;
-    align-self: center;
+
+.votation{
+    margin-top: 2rem;
+    border: 1px solid #3C9090;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
 }
 
 .foot{
@@ -112,9 +115,9 @@
 @media (min-width: 992px) { 
     .datos-reunion{
         margin: 0 auto;
-        max-width: 70% ;
+        max-width: 900px ;
         flex-direction: row;
-        gap: 1rem;
+        gap: 2.5rem;
         align-items: center;
     }
     .divider {
@@ -124,16 +127,7 @@
         background: var(--secondary);
       }
     
-    .message{
-        display: flex;
-        height: 252px;
-        justify-content: center;
-        gap:4rem;
-        background-color: var(--primary-light);
-    }
-    .message h3{
-        align-self: center;
-    }
+
     .imagen-container{
         height: 252px;
         display: flex;
@@ -146,11 +140,12 @@
         align-self: flex-end;
     }
     .votation{
+        max-width: 900px ;
+        margin: 0 auto;
         margin-top: 2rem;
         border: 1px solid #3C9090;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 1rem;
-        display: flex;
-        flex-direction: row;
         gap: 1rem;
     }
     .flecha{
@@ -161,10 +156,5 @@
     }
     .ms{
         font-size: 1rem;
-    }
-    .btn{
-        border: none;
-        width: 250px;
-        border-radius: 10px;
     }
 }
