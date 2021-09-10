@@ -1,0 +1,170 @@
+.title{
+    font-size: 1rem;
+    color: var(--black);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.datos-reunion{
+    
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--secondary);
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items:flex-start;
+}
+
+.divider{
+    display: none;
+}
+.fecha{
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.votation{
+    margin-top: 2rem;
+    border: 1px solid #3C9090;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.country-option{
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    justify-content: center;
+}
+
+.line{
+    background-color: #4ECB71;
+    height: 10px;
+    border-radius:8px;
+}
+
+.country{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--secondary-dark);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    border-radius: 6px;
+    
+}
+
+.time{
+    gap:0.5rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.hour{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.ms{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 200;
+    color: var(--black);
+}
+.btn{
+    border: none;
+    background-color: var(--secondary);
+    min-width: 120px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+}
+
+.foot{
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.ok-icon{
+    width: 3rem;
+}
+
+
+
+  /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .datos-reunion{
+        margin: 0 auto;
+        max-width: 70% ;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+    .divider {
+        display: block;
+        width: 2px;
+        align-self: stretch;
+        background: var(--secondary);
+      }
+    
+    .message{
+        display: flex;
+        height: 252px;
+        justify-content: center;
+        gap:4rem;
+        background-color: var(--primary-light);
+    }
+    .message h3{
+        align-self: center;
+    }
+    .imagen-container{
+        height: 252px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: auto;
+    }
+    .message img{
+        height: 208px;
+        align-self: flex-end;
+    }
+    .votation{
+        margin-top: 2rem;
+        border: 1px solid #3C9090;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .flecha{
+        order: 2;
+    }
+    .foot{
+        max-width: 700px;
+    }
+    .ms{
+        font-size: 1rem;
+    }
+    .btn{
+        border: none;
+        width: 250px;
+        border-radius: 10px;
+    }
+}

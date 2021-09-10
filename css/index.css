@@ -110,9 +110,33 @@ body{
     .menu li a:hover{
         color: var(--secondary-dark);
     }
-
     
 
 }
+
+/* Borrar cuando este el nav y el foot */
+.ph-nav{
+    height: 60px;
+    background-color: var(--primary);
+    text-align: center;
+    color: gray;
+}
+
+.ph-foot{
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 16px;
+    z-index:100;
+}
+@media (min-width: 992px) { 
+.ph-nav{
+    height: 97px;
+}
+}
+
+
 
 
