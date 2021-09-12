@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/frontendcafe/cmyk-mango/issues"
   },
-  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme"
+  "homepage": "https://github.com/frontendcafe/cmyk-mango#readme",
+  "devDependencies": {
+    "prettier": "2.4.0"
+  }
 }
