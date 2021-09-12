@@ -1,4 +1,4 @@
-const formularioLogin = document.getElementById("formulario-login");
+const formularioLogin = document.getElementById('formulario-login');
 formularioLogin.innerHTML = /* html */ `
   <div class="form-header">
     <h1 class="form__title">¡Bienvenidx!</h1>
