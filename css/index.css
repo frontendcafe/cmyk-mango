@@ -88,14 +88,9 @@ body {
     justify-content: center;
   }
 
-  .menu li {
-    padding-bottom: 1rem;
-    border-bottom: none;
-    font-size: 16px;
-  }
-  .menu li:first-child {
-    display: none;
-  }
+    .menu li.active {
+        border-bottom: 3px solid var(--primary);
+    }
 
   .menu li a {
     color: var(--black);
