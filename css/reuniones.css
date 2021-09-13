@@ -72,13 +72,6 @@ body {
   color: var(--black);
 }
 
-.reuniones-main {
-  display: grid;
-  gap: 2rem;
-  background-color: white;
-  min-height: 100vh;
-}
-
 .session {
   padding: 3.125rem 2rem;
 }
@@ -96,7 +89,7 @@ body {
   width: 100%;
 }
 
-.reuniones h4 {
+.reuniones h1 {
   font-family: "Reem Kufi", "Work Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -170,15 +163,15 @@ body {
   flex: 80%;
   line-height: 1.75rem;
   color: var(--black);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
-.meeting-item-info .meeting-item-desc p:last-child {
+.meeting-item-info .meeting-item-description p:last-child {
   margin-top: 10px;
 }
 
-.meeting-item-desc .meeting-item-title {
+.meeting-item-description .meeting-item-title {
   font-size: 1.125rem;
   line-height: 28px;
   font-weight: normal;
@@ -291,7 +284,7 @@ body {
     background-color: white;
   }
 
-  .reuniones h4 {
+  .reuniones h1 {
     font-size: 3rem;
     line-height: 55px;
     margin: 0px auto 0px auto;
@@ -330,16 +323,16 @@ body {
     flex: 70%;
   }
 
-  .meeting-item-info .meeting-item-desc {
+  .meeting-item-info .meeting-item-description {
     flex: 40%;
   }
 
-  .meeting-item-desc .meeting-item-title {
+  .meeting-item-description .meeting-item-title {
     font-size: 1.75rem;
     line-height: 35px;
   }
 
-  .meeting-item-info .meeting-item-desc p:last-child {
+  .meeting-item-info .meeting-item-description p:last-child {
     margin-top: 20px;
   }
 
@@ -351,7 +344,7 @@ body {
     height: 80px;
   }
 
-  .meeting-item-info .meeting-item-obs {
+  .meeting-item-info .meeting-item-observation {
     flex: 30%;
   }
 

@@ -7,10 +7,3 @@ noMeeting.innerHTML = /*html*/ `
     </div>
     <a class="btn-secondary" href="../reuniones.html">Nueva Reunión</a>
     `;
-
-// const newMeetingButton = noMeeting.getElementsByClassName('btn-secondary')[0];
-
-// newMeetingButton.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-// });
