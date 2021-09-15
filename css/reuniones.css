@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .container {
@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .nav {
@@ -90,7 +90,7 @@ body {
 }
 
 .reuniones h1 {
-  font-family: "Reem Kufi", "Work Sans", sans-serif;
+  font-family: 'Reem Kufi', 'Work Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.5rem;

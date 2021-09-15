@@ -1,23 +1,28 @@
-const IDS_SECCIONES = ["inicio", "formulario-login", "formulario-registro", "no-meeting"];
+const IDS_SECCIONES = [
+  'inicio',
+  'formulario-login',
+  'formulario-registro',
+  'no-meeting',
+];
 
 let diccionarioDisplaySecciones = {};
 
 const ocultarTodo = (idsSecciones) => {
   idsSecciones.map((id) => {
     const elemento = document.getElementById(id);
-    elemento.style.display = "none";
+    elemento.style.display = 'none';
   });
-}
+};
 
 const mostrarSolo = (mostrar) => {
   // noMeeting.style.display = "flex";
   // botonesSesion.style.display = "none";
   ocultarTodo(IDS_SECCIONES);
-  document.getElementById(mostrar).style.display = diccionarioDisplaySecciones[mostrar];
+  document.getElementById(mostrar).style.display =
+    diccionarioDisplaySecciones[mostrar];
 };
 
 window.onload = function () {
-
   IDS_SECCIONES.map((id) => {
     const elemento = document.getElementById(id);
     const display = getComputedStyle(elemento).display;
@@ -25,14 +30,13 @@ window.onload = function () {
     diccionarioDisplaySecciones[id] = display;
   });
 
-  mostrarSolo("inicio");
+  mostrarSolo('inicio');
 
   // Funcionalidad menu en web "Mis Reuniones"
   const menuMisReuiones = document.getElementById('menu-mis-reuiones');
 
   menuMisReuiones.addEventListener('click', (e) => {
     e.preventDefault();
-    mostrarSolo("no-meeting");
+    mostrarSolo('no-meeting');
   });
-
-}
+};

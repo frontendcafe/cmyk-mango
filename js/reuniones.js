@@ -1,6 +1,6 @@
 const listMeeting = document.getElementById('reuniones');
 
-listMeeting.innerHTML = /*html*/`<h1>Mis reuniones</h1>
+listMeeting.innerHTML = /*html*/ `<h1>Mis reuniones</h1>
     <div class="line"></div>
     <select name="select">
         <option class="select-item" value="Agosto">Agosto</option>
