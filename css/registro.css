@@ -7,7 +7,7 @@
 
 .form-title {
   font-family: "Reem Kufi", sans-serif;
-  font-size: 37px;
+  font-size: 36px;
   font-weight: 400;
   text-align: center;
 }
@@ -26,13 +26,14 @@
 }
 
 .register-label {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--secondary-dark);
 }
 
 .register-input {
   width: 100%;
+  font-size: 18px;
   background: none;
   border: none;
   outline: 0px;
@@ -42,6 +43,20 @@
 
 ::-ms-reveal {
   display:none;
+}
+
+.password-reveal{
+  color: var(--primary-dark);
+  position: relative;
+  left: 215px;
+  top: 15px;
+  display: in-line;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }
 
 .form-button {
@@ -57,11 +72,11 @@
 }
 
 .form-footer {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .to-login {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   text-decoration: none;
@@ -71,4 +86,11 @@
 /* Responsive Design */
 
 @media (max-width: 992px) {
+  .form-title {
+    font-size: 24px;
+  }
+
+  .register-label {
+    font-size: 16px;
+  }
 }
