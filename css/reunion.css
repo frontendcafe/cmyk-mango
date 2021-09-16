@@ -118,7 +118,7 @@
 @media (min-width: 992px) {
   .message {
     display: flex;
-    height: 252px;
+    height: 352px;
     justify-content: center;
     gap: 4rem;
     background-color: var(--primary-light);
@@ -127,7 +127,7 @@
     align-self: center;
   }
   .imagen-container {
-    height: 252px;
+    height: 352px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
