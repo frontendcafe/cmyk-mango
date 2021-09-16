@@ -41,3 +41,15 @@
 .icons-footer .my-meetings {
   text-align: center;
 }
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .footer{
+    display: none;
+  }
+}
