@@ -51,64 +51,10 @@
       <h3>Faltan 2 votos</h3>
     </div>
     <h1 class="reunion-title">Reunion Diseño</h1>
-    <main class="container">
-      <div class="votation">
-        <div class="flecha">2/5</div>
-        <div class="country-option">
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>Buenos Aires, Argentina</p>
-          </div>
-          <div class="time">
-            <h3>Opción 1</h3>
-            <div class="line"></div>
-            <div class="hour">11.00 hrs</div>
-          </div>
-          <div class="time">
-            <h3>Opción 2</h3>
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
-          </div>
-        </div>
-        <div class="country-option">
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>San José, Costa Rica</p>
-          </div>
-          <div class="time">
-            <h3>Opción 1</h3>
-            <div class="line"></div>
-            <div class="hour">11.00 hrs</div>
-          </div>
-          <div class="time">
-            <h3>Opción 2</h3>
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
-          </div>
-        </div>
-        <div class="country-option">
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>Berlín, Alemania</p>
-          </div>
-          <div class="time">
-            <h3>Opción 1</h3>
-            <div class="line"></div>
-            <p class="hour">11.00 hrs</p>
-          </div>
-          <div class="time">
-            <h3>Opción 2</h3>
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
-          </div>
-        </div>
-      </div>
-    </main>
 
     <main class="container">
-      <div class="votation">
+      <div class="reunion-options">
         <div class="country-option">
-          <div class="space"></div>
           <div class="country">
             <img src="assets/img/clock.svg" alt="icono reloj" />
             <p>Buenos Aires, Argentina</p>
@@ -121,40 +67,53 @@
             <img src="assets/img/clock.svg" alt="icono reloj" />
             <p>Berlín, Alemania</p>
           </div>
-        </div>
-        <div class="time-option">
-          <input type="radio" id="this" name="this" value="this" checked />
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">11.00 hrs</div>
-          </div>
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">11.00 hrs</div>
-          </div>
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
+          <div class="space">
+            <p>Votos</p>
           </div>
         </div>
-        <div class="time-option">
-          <input type="radio" id="this" name="this" value="this" checked />
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">11.00 hrs</div>
+        <label for="opcion1"
+          >Opción 1
+          <div class="time-option">
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">11.00 hrs</div>
+            </div>
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">11.00 hrs</div>
+            </div>
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">12.00 hrs</div>
+            </div>
+            <div class="flecha">2/5</div>
           </div>
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
+        </label>
+        <label for=""
+          >Opcion 2
+          <div id="opcion2" class="time-option">
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">11.00 hrs</div>
+            </div>
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">12.00 hrs</div>
+            </div>
+            <div class="time">
+              <div class="line"></div>
+              <div class="hour">12.00 hrs</div>
+            </div>
+            <div class="flecha">2/5</div>
           </div>
-          <div class="time">
-            <div class="line"></div>
-            <div class="hour">12.00 hrs</div>
-          </div>
-        </div>
+        </label>
       </div>
     </main>
     <div class="foot">
+      <p>
+        Una vez que todxs hayan dejado su voto podrás elegir la plataforma y
+        compartir el link de tu reunión
+      </p>
       <button class="btn">Enviar voto</button>
     </div>
 
