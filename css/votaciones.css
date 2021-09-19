@@ -1,223 +1,223 @@
 .title {
-	font-size: 1rem;
-	color: var(--black);
-	text-align: center;
-	margin: 2rem 0;
+  font-size: 1rem;
+  color: var(--black);
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .datos-reunion {
-	border-radius: 1rem;
-	padding: 1rem;
-	border: 1px solid var(--secondary);
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .datos {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 .mas-datos {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .divider {
-	height: 2px;
-	align-self: stretch;
-	background: var(--secondary);
+  height: 2px;
+  align-self: stretch;
+  background: var(--secondary);
 }
 .fecha {
-	color: var(--secondary);
-	font-weight: 600;
+  color: var(--secondary);
+  font-weight: 600;
 }
 
 .votation {
-	margin-top: 2rem;
-	border: 1px solid #3c9090;
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #3c9090;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .country-option {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: 20px 1fr 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 20px 1fr 1fr 1fr;
 }
 .time-option {
-	display: grid;
-	gap: 1rem;
-	grid-template-columns: 20px 1fr 1fr 1fr;
-	align-items: flex-start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 20px 1fr 1fr 1fr;
+  align-items: flex-start;
 }
 .time-option input {
-	justify-self: flex-start;
-	width: 18px;
+  justify-self: flex-start;
+  width: 18px;
 }
 
 .line {
-	background-color: #4ecb71;
-	height: 10px;
-	border-radius: 8px;
+  background-color: #4ecb71;
+  height: 10px;
+  border-radius: 8px;
 }
 
 .country {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	gap: 0.5rem;
-	align-items: center;
-	background-color: var(--secondary-dark);
-	padding: 0.5rem 0.5rem;
-	color: var(--white);
-	border-radius: 6px;
-	font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--secondary-dark);
+  padding: 0.5rem 0.5rem;
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 0.5rem;
 }
 
 .country p {
-	text-align: center;
+  text-align: center;
 }
 
 .time {
-	gap: 0.5rem;
-	display: flex;
-	flex-direction: column;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .hour {
-	padding-top: 0.5rem;
-	text-align: center;
-	font-size: small;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: small;
 }
 
 .ms {
-	font-size: 1rem;
-	text-align: center;
-	font-weight: 200;
-	color: var(--black);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 200;
+  color: var(--black);
 }
 
 .votation {
-	margin-top: 2rem;
-	border: 1px solid #3c9090;
-	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1.2rem;
+  margin-top: 2rem;
+  border: 1px solid #3c9090;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .foot {
-	margin: 0 auto;
-	padding: 2rem 3rem;
-	display: flex;
-	gap: 1rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .foot p {
-	text-align: center;
-	font-weight: 600;
+  text-align: center;
+  font-weight: 600;
 }
 
 .ok-icon {
-	width: 3rem;
+  width: 3rem;
 }
 
 .btn {
-	border: none;
-	background-color: var(--secondary);
-	min-width: 120px;
-	border-radius: 20px;
-	padding: 10px 20px;
-	text-align: center;
-	align-self: center;
+  border: none;
+  background-color: var(--secondary);
+  min-width: 120px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  align-self: center;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-	.datos-reunion {
-		margin: 0 auto;
-		flex-direction: row;
-		gap: 2rem;
-		align-items: center;
-	}
-	.datos {
-		align-items: start;
-	}
+  .datos-reunion {
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+  .datos {
+    align-items: start;
+  }
 
-	.mas-datos {
-		align-items: start;
-		gap: 1rem;
-	}
-	.divider {
-		width: 2px;
-		height: auto;
-		align-self: stretch;
-		background: var(--secondary);
-	}
-	.country {
-		font-size: 0.8rem;
-	}
+  .mas-datos {
+    align-items: start;
+    gap: 1rem;
+  }
+  .divider {
+    width: 2px;
+    height: auto;
+    align-self: stretch;
+    background: var(--secondary);
+  }
+  .country {
+    font-size: 0.8rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	.datos-reunion {
-		max-width: 800px;
-	}
-	.divider {
-		width: 2px;
-		height: auto;
-		align-self: stretch;
-		background: var(--secondary);
-	}
-	.mas-datos {
-		display: flex;
-		flex-direction: row;
-		gap: 3rem;
-	}
+  .datos-reunion {
+    max-width: 800px;
+  }
+  .divider {
+    width: 2px;
+    height: auto;
+    align-self: stretch;
+    background: var(--secondary);
+  }
+  .mas-datos {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
 
-	.imagen-container {
-		height: 252px;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		width: auto;
-	}
-	.message img {
-		height: 208px;
-		align-self: flex-end;
-	}
-	.country {
-		flex-direction: row;
-		font-size: 1rem;
-	}
-	.votation {
-		max-width: 800px;
-		margin: 0 auto;
-		margin-top: 2rem;
-		border: 1px solid #3c9090;
+  .imagen-container {
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
+  }
+  .message img {
+    height: 208px;
+    align-self: flex-end;
+  }
+  .country {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+  .votation {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: 1px solid #3c9090;
 
-		padding: 1rem;
-		gap: 1rem;
-	}
-	.flecha {
-		order: 2;
-	}
-	.foot {
-		max-width: 700px;
-	}
-	.ms {
-		font-size: 1rem;
-	}
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .flecha {
+    order: 2;
+  }
+  .foot {
+    max-width: 700px;
+  }
+  .ms {
+    font-size: 1rem;
+  }
 }
