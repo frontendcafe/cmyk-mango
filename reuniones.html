@@ -18,11 +18,8 @@
     />
 
     <!-- Estilos-->
-    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/primeros-pasos.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/registro.css" />
-    <link rel="stylesheet" href="./css/no-meetings.css" />
+    <link rel="stylesheet" href="./css/reuniones.css" />
 
     <title>Mango</title>
   </head>
@@ -45,32 +42,14 @@
         <li><a id="menu-mis-reuiones" href="">Mis reuniones</a></li>
       </ul>
     </nav>
-    <main class="welcome">
-      <div class="container brand">
-        <img class="img-logo" src="../assets/img/logotipo.png" alt="" />
-        <h2 class="name">MANGO</h2>
-      </div>
+    <main class="reuniones-main">
       <div class="session">
-        <div id="inicio">
-          <h4>Organiza tus reuniones de una manera fácil y rápida</h4>
-          <button class="btn-yellow">Iniciar sesion</button>
-          <button class="btn-empty">Registrarse</button>
-        </div>
-
-        <div id="formulario-login">Login</div>
-
-        <div id="formulario-registro">Registro</div>
-
-        <div class="no-meeting" id="no-meeting"></div>
+        <div class="reuniones" id="reuniones"></div>
       </div>
     </main>
 
     <!-- Scripts -->
-    <script src="./js/api/index.js" type="module"></script>
-    <script src="./js/index.js"></script>
     <script src="./js/primeros-pasos.js" type="module"></script>
-    <script src="./js/login.js" type="module"></script>
-    <script src="./js/registro.js" type="module"></script>
-    <script src="./js/no-meetings.js" type="module"></script>
+    <script src="./js/reuniones.js" type="module"></script>
   </body>
 </html>
