@@ -10,11 +10,11 @@ export const db = getFirestore(firebaseApp);
 
 export function handleError(messages, error) {
   if (error.name === 'FirebaseError') {
-    Promise.reject({
+    return Promise.reject({
       code: error.code,
       message: messages[error.code] || error.message,
     });
   }
 
-  Promise.reject(error);
+  return Promise.reject(error);
 }
