@@ -52,88 +52,95 @@ const selectElement = document.getElementById('selectedMonth');
 
 selectElement.addEventListener('change', async (event) => {
 
-    const selectedValue = event.target.value;
-    let selectedMonthNumber = '00';
+    try{
 
-    switch (selectedValue) {
-        case 'Enero':
-            selectedMonthNumber = '01';
-            break;
-        case 'Febrero':
-            selectedMonthNumber = '02';
-            break;
-        case 'Marzo':
-            selectedMonthNumber = '03';
-            break;
-        case 'Abril':
-            selectedMonthNumber = '04';
-            break;
-        case 'Mayo':
-            selectedMonthNumber = '05';
-            break;
-        case 'Junio':
-            selectedMonthNumber = '06';
-            break;
-        case 'Julio':
-            selectedMonthNumber = '07';
-            break;
-        case 'Agosto':
-            selectedMonthNumber = '08';
-            break;
-        case 'Septiembre':
-            selectedMonthNumber = '09';
-            break;
-        case 'Octubre':
-            selectedMonthNumber = '10';
-            break;
-        case 'Noviembre':
-            selectedMonthNumber = '11';
-            break;
-        case 'Diciembre':
-            selectedMonthNumber = '12';
-            break;
-        default:
-            selectedMonthNumber = null;
-            break;
-    }
+        const selectedValue = event.target.value;
+        let selectedMonthNumber = '00';
 
-    let concatenatedMeetings = '';
+        switch (selectedValue) {
+            case 'Enero':
+                selectedMonthNumber = '01';
+                break;
+            case 'Febrero':
+                selectedMonthNumber = '02';
+                break;
+            case 'Marzo':
+                selectedMonthNumber = '03';
+                break;
+            case 'Abril':
+                selectedMonthNumber = '04';
+                break;
+            case 'Mayo':
+                selectedMonthNumber = '05';
+                break;
+            case 'Junio':
+                selectedMonthNumber = '06';
+                break;
+            case 'Julio':
+                selectedMonthNumber = '07';
+                break;
+            case 'Agosto':
+                selectedMonthNumber = '08';
+                break;
+            case 'Septiembre':
+                selectedMonthNumber = '09';
+                break;
+            case 'Octubre':
+                selectedMonthNumber = '10';
+                break;
+            case 'Noviembre':
+                selectedMonthNumber = '11';
+                break;
+            case 'Diciembre':
+                selectedMonthNumber = '12';
+                break;
+            default:
+                selectedMonthNumber = null;
+                break;
+        }
 
-    const listOfMeetings = await getMeetings({ month: `2021-${selectedMonthNumber}` });
+        let concatenatedMeetings = '';
 
-    if (listOfMeetings.meetings.length > 0) {
+        const listOfMeetings = await getMeetings({ month: `2021-${selectedMonthNumber}` });
 
-        listOfMeetings.meetings.forEach((element)=>{
-            concatenatedMeetings = concatenatedMeetings + /*html*/`<div class="meeting-item" id="meeting-item">
-                <p class="meeting-item-date">${element.datetime !== null && element.datetime !== undefined ? element.datetime.length > 0 ? element.datetime[[element.datetime.length - 1]].toDate().toDateString() : '' : '' }</p>
-                <div class="meeting-item-container">
-                    <div class="meeting-item-info">
-                    <div class="meeting-item-description">
-                        <h5 class="meeting-item-title">${element.title}</h5>
-                        <p>${element.description}</p>
-                        <p>Duración: ${element.duration}</p>
+        if (listOfMeetings.meetings.length > 0) {
+
+            listOfMeetings.meetings.forEach((element)=>{
+                concatenatedMeetings = concatenatedMeetings + /*html*/`<div class="meeting-item" id="meeting-item">
+                    <p class="meeting-item-date">${element.datetime !== null && element.datetime !== undefined ? element.datetime.length > 0 ? element.datetime[[element.datetime.length - 1]].toDate().toDateString() : '' : '' }</p>
+                    <div class="meeting-item-container">
+                        <div class="meeting-item-info">
+                        <div class="meeting-item-description">
+                            <h5 class="meeting-item-title">${element.title}</h5>
+                            <p>${element.description}</p>
+                            <p>Duración: ${element.duration}</p>
+                        </div>
+                        <div class="line-vertical"></div>
+                        <div class="meeting-item-observation">
+                            <p>Observaciones: ${element.observations}</p>
+                        </div>
+                        </div>
+                        <div class="meeting-item-actions">
+                        ${element.participants !== null && element.participants !== undefined ? element.participants.length > 0 ? `<p class="votes">${element.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
+                        <a id="more" href=""><img src="../assets/img/arrow.svg" alt=""></a>
+                        </div>
                     </div>
-                    <div class="line-vertical"></div>
-                    <div class="meeting-item-observation">
-                        <p>Observaciones: ${element.observations}</p>
-                    </div>
-                    </div>
-                    <div class="meeting-item-actions">
-                    ${element.participants !== null && element.participants !== undefined ? element.participants.length > 0 ? `<p class="votes">${element.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
-                    <a id="more" href=""><img src="../assets/img/arrow.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>`;
-        });
-    
-        const listMeetingItemsHTML = document.getElementById('reuniones-items');
-        listMeetingItemsHTML.innerHTML = concatenatedMeetings;
+                </div>`;
+            });
+        
+            const listMeetingItemsHTML = document.getElementById('reuniones-items');
+            listMeetingItemsHTML.innerHTML = concatenatedMeetings;
 
-    } else {
+        } else {
 
-        mostrarSolo('no-meeting');
-           
-    }
+            mostrarSolo('no-meeting');
+            
+        }
+        
+    } catch (error) {
+       console.error(error);
+   }
+
 });
 
 window.onload = function () {
