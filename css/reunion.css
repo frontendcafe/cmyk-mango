@@ -189,6 +189,7 @@
     color: var(--black);
     text-align: center;
     vertical-align: middle;
+    order: 9999;
   }
   .time-option {
     grid-template-columns: 1fr 1fr 1fr 60px;
@@ -196,6 +197,7 @@
   .flecha {
     grid-column: auto;
     justify-self: center;
+    order: 9999;
   }
   .foot {
     max-width: 700px;

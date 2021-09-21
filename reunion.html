@@ -44,69 +44,23 @@
         <li><button>Log Out</button></li>
       </ul>
     </nav>
+
     <div class="message">
       <div class="imagen-container">
         <img src="assets/img/hands.png" alt="manos" />
       </div>
       <h3>Faltan 2 votos</h3>
     </div>
-    <h1 class="reunion-title">Reunion Diseño</h1>
+    <h1 id="reunion-title" class="reunion-title">Reunion Diseño</h1>
 
     <main class="container">
       <div class="reunion-options">
-        <div class="country-option">
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>Buenos Aires, Argentina</p>
-          </div>
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>San José, Costa Rica</p>
-          </div>
-          <div class="country">
-            <img src="assets/img/clock.svg" alt="icono reloj" />
-            <p>Berlín, Alemania</p>
-          </div>
+        <div id="country-option" class="country-option">
           <div class="space">
             <p>Votos</p>
           </div>
         </div>
-        <label for="opcion1"
-          >Opción 1
-          <div class="time-option">
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">11.00 hrs</div>
-            </div>
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">11.00 hrs</div>
-            </div>
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">12.00 hrs</div>
-            </div>
-            <div class="flecha">2/5</div>
-          </div>
-        </label>
-        <label for=""
-          >Opcion 2
-          <div id="opcion2" class="time-option">
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">11.00 hrs</div>
-            </div>
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">12.00 hrs</div>
-            </div>
-            <div class="time">
-              <div class="line"></div>
-              <div class="hour">12.00 hrs</div>
-            </div>
-            <div class="flecha">2/5</div>
-          </div>
-        </label>
+        <div id="time-options"></div>
       </div>
     </main>
     <div class="foot">
@@ -121,5 +75,7 @@
     <!-- Scripts -->
     <script src="./js/index.js"></script>
     <script src="./js/navegacion.js" type="module"></script>
+    <!-- Funcionalidad pagina reunion -->
+    <script src="./js/reunion.js" type="module"></script>
   </body>
 </html>
