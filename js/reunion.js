@@ -1,26 +1,25 @@
 import { getMeeting } from './api/meetings.js';
 
 var url = new URL(window.location);
-//console.log(url);
 
 const searchParams1 = new URLSearchParams(url.search);
-
 const param = searchParams1.get('meetingId');
 
-//console.log(searchParams1);
-//console.log(param);
-
 const meetInfo = async () => {
-  const countryOption = document.querySelector('#country-option');
-  const reunionTitle = document.querySelector('#reunion-title');
-  const timeOptions = document.querySelector('#time-options');
   const meet = await getMeeting(param);
+  buildInfo(meet);
+};
 
-  console.log(meet.meeting);
-  const horas = meet.meeting.datetime;
-  console.log(horas);
-  const countries = meet.meeting.locations;
-  const title = meet.meeting.title;
+const countryOption = document.querySelector('#country-option');
+const reunionTitle = document.querySelector('#reunion-title');
+const timeOptions = document.querySelector('#time-options');
+
+meetInfo();
+function buildInfo(info) {
+  const horas = info.meeting.datetime;
+  const countries = info.meeting.locations;
+  const title = info.meeting.title;
+
   reunionTitle.innerHTML = title;
   countries.map((country) => {
     console.log(country);
@@ -46,5 +45,4 @@ const meetInfo = async () => {
         <div class="flecha">2/5</div>
       </div>`;
   });
-};
-meetInfo();
+}
