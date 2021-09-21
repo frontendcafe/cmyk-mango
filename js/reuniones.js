@@ -104,7 +104,6 @@ selectElement.addEventListener('change', async (event) => {
         const listOfMeetings = await getMeetings({ month: `2021-${selectedMonthNumber}` });
 
         if (listOfMeetings.meetings.length > 0) {
-
             listOfMeetings.meetings.forEach((element)=>{
                 concatenatedMeetings = concatenatedMeetings + /*html*/`<div class="meeting-item" id="meeting-item">
                     <p class="meeting-item-date">${element.datetime !== null && element.datetime !== undefined ? element.datetime.length > 0 ? element.datetime[[element.datetime.length - 1]].toDate().toDateString() : '' : '' }</p>
@@ -121,8 +120,8 @@ selectElement.addEventListener('change', async (event) => {
                         </div>
                         </div>
                         <div class="meeting-item-actions">
-                        ${element.participants !== null && element.participants !== undefined ? element.participants.length > 0 ? `<p class="votes">${element.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
-                        <a id="more" href=""><img src="../assets/img/arrow.svg" alt=""></a>
+                            ${element.participants !== null && element.participants !== undefined ? element.participants.length > 0 ? `<p class="votes">${element.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
+                            <a id="more" href="./reunion.html?id=${element.id}"><img src="../assets/img/arrow.svg" alt=""></a>
                         </div>
                     </div>
                 </div>`;
@@ -136,7 +135,7 @@ selectElement.addEventListener('change', async (event) => {
             mostrarSolo('no-meeting');
             
         }
-        
+
     } catch (error) {
        console.error(error);
    }
