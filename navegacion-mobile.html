@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/primeros-pasos.css">
+    <link rel="stylesheet" href="./css/navegacion-mobile.css">
+
+    <title>Mango</title>
+</head>
+
+<body class="screen">
+
+    <!-- Header -->
+    <header class="container header">
+        <h2 class="logo">Mango</h2>
+        <div class="icons-nav">
+            <a id="bell" href=""><img src="../assets/img/bell.svg" alt=""></a>
+            <a id="menu" href=""><img src="../assets/img/menu.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- Nav -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="">Iniciar sesión</a></li>
+            <li><a href="">Nueva Reunión</a></li>
+            <li><a href="">Mi perfil</a></li>
+            <li><a href="">Mis reuniones</a></li>
+        </ul>
+    </nav>
+    <main class="welcome ">
+        <div class="container brand">
+            <img class="img-logo" src="../assets/img/logotipo.png" alt="">
+            <h2 class="name">MANGO</h2>
+        </div>
+        <div class="session">
+            <div id="inicio">
+                <h4>Organiza tus reuniones de una manera fácil y rápida</h4>
+                <button class="btn-yellow">Iniciar sesion</button>
+                <button class="btn-empty">Registrarse</button>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer sticky">
+        <div class="icons-footer">
+            <div>
+                <a id="new-meeting" href=""><img src="../assets/img/new-meeting.svg" alt="Nueva reunión"></a>
+                <p>Nueva reunión</p>
+            </div>
+            <div>
+                <a id="perfil" href=""><img src="../assets/img/perfil.svg" alt="Perfil"></a>
+                <p>Perfil</p>
+            </div>
+            <div>
+                <a id="my-meetings" href=""><img src="../assets/img/my-meetings.svg" alt="Mis reuniones"></a>
+                <p>Mis reuniones</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/index.js"></script>
+    <script src="./js/primeros-pasos.js" type="module"></script>
+    <script src="./js/navegacion-mobile.js" type="module"></script>
+</body>
+
+</html>
