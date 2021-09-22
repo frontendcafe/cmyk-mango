@@ -5,17 +5,17 @@ formularioRegistro.innerHTML = /* html */ `
   </div>
   <form class="form">
     <div class="register">
-    <label class="register-label">Nombre y apellido:</label>
+    <label class="register-label">Nombre y apellido</label>
     <input type="text" class="register-input">
-    <label class="register-label">Correo electrónico:</label>
+    <label class="register-label">Correo electrónico</label>
     <input type="text" class="register-input">
-    <label class="register-label">Contraseña:</label>
+    <label class="register-label">Contraseña</label>
     <span class="password-reveal">
     <i class="far fa-eye"></i>
     <i class="far fa-eye-slash hide"></i>
     </span>
     <input type="password" class="register-input" id="password-input">
-    <label class="register-label">Ciudad, País:</label>
+    <label class="register-label">Ciudad, País</label>
     <input type="text" class="register-input">
     </div>
     <button class="form-button">Regístrate</button>
