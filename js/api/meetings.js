@@ -36,7 +36,11 @@ export async function getMeeting(id) {
 export async function getMeetings({ month = '' }) {
   try {
     const meetingsSnap = await getDocs(meetingsCollection);
-    const meetings = meetingsSnap.docs.map((meetingDS) => meetingDS.data());
+
+    const meetings = meetingsSnap.docs.map((meetingDS) => {
+      const meetingsData = meetingDS.data();
+      return formatMeeting(meetingsData);
+    });
     return { meetings };
   } catch (error) {
     throw error;
