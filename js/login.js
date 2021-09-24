@@ -32,7 +32,7 @@ loginForm.addEventListener('submit', (e) => {
 
   login(email, password)
     .then((response) => {
-      window.location('reunion.html');
+      location.href = 'reunion.html';
     })
     .catch((err) => {
       const errorMessage = err.message;
