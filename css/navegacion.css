@@ -102,10 +102,11 @@
 
   .menu li a {
     color: var(--black);
+    border-bottom: 2px solid transparent;
   }
 
   .menu li a:hover {
-    color: var(--secondary-dark);
+    border-bottom: 2px solid var(--secondary-dark);
   }
 
   .menu li button {
