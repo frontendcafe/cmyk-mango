@@ -1,5 +1,4 @@
 /node_modules
 .cache
 .DS_Store
-.vscode
-/js/api/config.js
+package-lock.json

@@ -1,0 +1,82 @@
+.welcome {
+  background-color: var(--white);
+}
+
+.container.brand {
+  display: none;
+}
+
+.no-meeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 400;
+  height: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+.no-meeting h4 {
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+.create-meeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 154px;
+  border: 1px solid #ffc324;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.no-meeting h5 {
+  font-size: 1.125rem;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .welcome {
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container.brand {
+    display: flex;
+  }
+  .no-meeting {
+    background-color: var(--white);
+    padding: 0 5rem;
+  }
+  .no-meeting h4 {
+    margin-bottom: 50px;
+    font-size: 1.75rem;
+  }
+  .create-meeting {
+  }
+  .no-meeting h5 {
+    font-size: 1.5rem;
+  }
+}

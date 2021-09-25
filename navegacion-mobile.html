@@ -20,8 +20,7 @@
     <!-- Estilos-->
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/primeros-pasos.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/registro.css" />
+    <link rel="stylesheet" href="./css/navegacion-mobile.css" />
 
     <title>Mango</title>
   </head>
@@ -41,7 +40,7 @@
         <li><a href="">Iniciar sesión</a></li>
         <li><a href="">Nueva Reunión</a></li>
         <li><a href="">Mi perfil</a></li>
-        <li><a id="menu-mis-reuiones" href="">Mis reuniones</a></li>
+        <li><a href="">Mis reuniones</a></li>
       </ul>
     </nav>
     <main class="welcome">
@@ -52,30 +51,37 @@
       <div class="session">
         <div id="inicio">
           <h4>Organiza tus reuniones de una manera fácil y rápida</h4>
-          <button class="btn-yellow" id="btn-login">Iniciar sesion</button>
-          <button class="btn-empty" id="btn-registro">Registrarse</button>
+          <button class="btn-yellow">Iniciar sesion</button>
+          <button class="btn-empty">Registrarse</button>
         </div>
-
-        <div id="formulario-login">Login</div>
-
-        <div class="formulario-registro" id="formulario-registro">Registro</div>
-
-        <div id="no-meeting"></div>
       </div>
     </main>
-
-    <script src="https://unpkg.com/dayjs@1.10.7/dayjs.min.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.7/plugin/utc.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.7/plugin/timezone.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.7/plugin/localeData.js"></script>
-    <script src="https://unpkg.com/dayjs@1.10.7/locale/es.js"></script>
-    <script src="./js/dayjs-config.js" type="module"></script>
+    <footer class="footer sticky">
+      <div class="icons-footer">
+        <div>
+          <a id="new-meeting" href=""
+            ><img src="../assets/img/new-meeting.svg" alt="Nueva reunión"
+          /></a>
+          <p>Nueva reunión</p>
+        </div>
+        <div>
+          <a id="perfil" href=""
+            ><img src="../assets/img/perfil.svg" alt="Perfil"
+          /></a>
+          <p>Perfil</p>
+        </div>
+        <div>
+          <a id="my-meetings" href=""
+            ><img src="../assets/img/my-meetings.svg" alt="Mis reuniones"
+          /></a>
+          <p>Mis reuniones</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Scripts -->
-    <script src="./js/api/index.js" type="module"></script>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/primeros-pasos.js" type="module"></script>
-    <script src="./js/login.js" type="module"></script>
-    <script src="./js/registro.js" type="module"></script>
+    <script src="./js/navegacion-mobile.js" type="module"></script>
   </body>
 </html>
