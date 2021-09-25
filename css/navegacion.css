@@ -90,6 +90,7 @@
     font-size: 16px;
     padding: 0px;
     width: fit-content;
+    width: -moz-fit-content;
   }
 
   .menu li:first-child {
