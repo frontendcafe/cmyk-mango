@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: #fffef5;
+}
+
+.container-empty {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  top: 60px;
+  background: #62cbc5;
+}
+
+.acerca-de {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logotipo-mob {
+  position: absolute;
+  width: 208px;
+  height: 171px;
+  top: 119px;
+}
+
+.logotipo-desktop {
+  display: none;
+}
+
+.acerca-de h1 {
+  position: absolute;
+  width: 223px;
+  height: 30px;
+  top: 290px;
+  font-family: Reem Kufi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.acerca-de h2 {
+  position: absolute;
+  width: 320px;
+  height: 84px;
+  top: 374px;
+  font-family: Reem Kufi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.logotipo-fec-square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 512px;
+}
+
+.acerca-de h3 {
+  position: absolute;
+  width: 208px;
+  height: 33px;
+  top: 624px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.card-mob {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  top: 735px;
+  width: 204px;
+  height: 226px;
+  background: #fffef5;
+  border: 2px solid #3c9191;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.card-mob h4 {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  color: #22302c;
+}
+
+.container-card-mob p {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.card-name-mob {
+  width: 188px;
+  border-bottom: 1px solid #62cbc5;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.card-area-mob {
+  width: 188px;
+  height: 33px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c9191;
+}
+
+.card-desktop {
+  display: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .container-empty {
+    position: absolute;
+    height: 305px;
+    top: 97px;
+  }
+
+  .logotipo-mob {
+    display: none;
+  }
+
+  .logotipo-desktop {
+    position: absolute;
+    display: flex;
+    top: 142px;
+  }
+
+  .acerca-de h1 {
+    position: absolute;
+    width: 315px;
+    height: 61px;
+    top: 495px;
+    font-size: 48px;
+    line-height: 22px;
+  }
+
+  .acerca-de h2 {
+    position: absolute;
+    width: 672px;
+    height: 111px;
+    top: 657px;
+    font-size: 38px;
+    line-height: 55px;
+  }
+
+  .logotipo-fec-square {
+    position: absolute;
+    top: 813px;
+  }
+
+  .acerca-de h3 {
+    position: absolute;
+    width: 208px;
+    height: 33px;
+    top: 925px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .card-mob {
+    display: none;
+  }
+
+  .card-desktop {
+    position: absolute;
+    display: flex;
+    width: 796px;
+    height: 133px;
+    top: 1049px;
+    background: #fefefe;
+    border: 2px solid #3c9191;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+  }
+
+  .card-desktop h4 {
+    position: absolute;
+    left: 34px;
+    right: 607px;
+    top: 8px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    color: #22302c;
+  }
+
+  .container-card-desktop {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .container-card-desktop p {
+    width: 265px;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-name-desktop {
+    border-right: 1px solid #62cbc5;
+    height: 80px;
+    align-items: center;
+  }
+
+  .card-area-desktop {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #3c9191;
+  }
+}
