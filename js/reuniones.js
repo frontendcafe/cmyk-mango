@@ -20,23 +20,20 @@ const mostrarSolo = (mostrar) => {
     document.getElementById(mostrar).style.display = diccionarioDisplaySecciones[mostrar];
 };
 
+const months = dayjs.months();
+const monthOptions = months.map((month, index) => {
+  const monthNumber = index + 1;
+  //const monthName = _.capitalize(month);
+  const monthName = month.charAt(0).toUpperCase() + month.slice(1);
+  return `<option class="selectedMonth-item" value="${monthNumber}">${monthName}</option>`;
+});
+
 // Show initial view
 let viewMeetings = /*html*/`<h1>Mis reuniones</h1>
 <div class="line"></div>
 <select name="selectedMonth" id="selectedMonth">
     <option value="" selected disabled>Selecciona un mes...</option>
-    <option class="selectedMonth-item" value="Agosto">Enero</option>
-    <option class="selectedMonth-item" value="Agosto">Febrero</option>
-    <option class="selectedMonth-item" value="Agosto">Marzo</option>
-    <option class="selectedMonth-item" value="Agosto">Abril</option>
-    <option class="selectedMonth-item" value="Agosto">Mayo</option>
-    <option class="selectedMonth-item" value="Agosto">Junio</option>
-    <option class="selectedMonth-item" value="Agosto">Julio</option>
-    <option class="selectedMonth-item" value="Agosto">Agosto</option>
-    <option class="selectedMonth-item" value="Septiembre">Septiembre</option>
-    <option class="selectedMonth-item" value="Octubre">Octubre</option>
-    <option class="selectedMonth-item" value="Agosto">Noviembre</option>
-    <option class="selectedMonth-item" value="Agosto">Diciembre</option>
+    ${monthOptions}
 </select>
 <div class="reuniones-items" id="reuniones-items"></div>
 <div class="btn-container">
@@ -54,74 +51,34 @@ selectElement.addEventListener('change', async (event) => {
 
     try{
 
-        const selectedValue = event.target.value;
-        let selectedMonthNumber = '00';
-
-        switch (selectedValue) {
-            case 'Enero':
-                selectedMonthNumber = '01';
-                break;
-            case 'Febrero':
-                selectedMonthNumber = '02';
-                break;
-            case 'Marzo':
-                selectedMonthNumber = '03';
-                break;
-            case 'Abril':
-                selectedMonthNumber = '04';
-                break;
-            case 'Mayo':
-                selectedMonthNumber = '05';
-                break;
-            case 'Junio':
-                selectedMonthNumber = '06';
-                break;
-            case 'Julio':
-                selectedMonthNumber = '07';
-                break;
-            case 'Agosto':
-                selectedMonthNumber = '08';
-                break;
-            case 'Septiembre':
-                selectedMonthNumber = '09';
-                break;
-            case 'Octubre':
-                selectedMonthNumber = '10';
-                break;
-            case 'Noviembre':
-                selectedMonthNumber = '11';
-                break;
-            case 'Diciembre':
-                selectedMonthNumber = '12';
-                break;
-            default:
-                selectedMonthNumber = null;
-                break;
-        }
+        const selectedMonth = event.target.value;
+        const year = dayjs().year();
 
         let concatenatedMeetings = '';
 
-        const listOfMeetings = await getMeetings({ month: `2021-${selectedMonthNumber}` });
+        const listOfMeetings = await getMeetings({ month: `${year}-${selectedMonth}` });
+
+        console.log(listOfMeetings);
 
         if (listOfMeetings.meetings.length > 0) {
-            listOfMeetings.meetings.forEach((element)=>{
+            listOfMeetings.meetings.forEach((meeting)=>{
                 concatenatedMeetings = concatenatedMeetings + /*html*/`<div class="meeting-item" id="meeting-item">
-                    <p class="meeting-item-date">${element.datetime !== null && element.datetime !== undefined ? element.datetime.length > 0 ? element.datetime[[element.datetime.length - 1]].toDate().toDateString() : '' : '' }</p>
+                    <p class="meeting-item-date">${meeting.datetime !== null && meeting.datetime !== undefined ? meeting.datetime.length > 0 ? meeting.datetime[[meeting.datetime.length - 1]].toDate().toDateString() : '' : '' }</p>
                     <div class="meeting-item-container">
                         <div class="meeting-item-info">
                         <div class="meeting-item-description">
-                            <h5 class="meeting-item-title">${element.title}</h5>
-                            <p>${element.description}</p>
-                            <p>Duración: ${element.duration}</p>
+                            <h5 class="meeting-item-title">${meeting.title}</h5>
+                            <p>${meeting.description}</p>
+                            <p>Duración: ${meeting.duration}</p>
                         </div>
                         <div class="line-vertical"></div>
                         <div class="meeting-item-observation">
-                            <p>Observaciones: ${element.observations}</p>
+                            <p>Observaciones: ${meeting.observations}</p>
                         </div>
                         </div>
                         <div class="meeting-item-actions">
-                            ${element.participants !== null && element.participants !== undefined ? element.participants.length > 0 ? `<p class="votes">${element.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
-                            <a id="more" href="./reunion.html?id=${element.id}"><img src="../assets/img/arrow.svg" alt=""></a>
+                            ${meeting.participants !== null && meeting.participants !== undefined ? meeting.participants.length > 0 ? `<p class="votes">${meeting.participants.length} <br>votos</p>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>` : `<a id="vote" href=""><img src="../assets/img/check.svg" alt=""></a>`}
+                            <a id="more" href="./reunion.html?id=${meeting.id}"><img src="../assets/img/arrow.svg" alt=""></a>
                         </div>
                     </div>
                 </div>`;
