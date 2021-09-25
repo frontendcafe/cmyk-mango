@@ -20,7 +20,7 @@ formularioLogin.innerHTML = /* html */ `
   </form>
 
   <div class="form-footer">
-    <p class="form-footer__p">¿No tenés cuenta?</p><a href="#" class="link">Crear cuenta</a>
+    <p class="form-footer__p">¿No tenés cuenta?</p><p id="crear-cuenta" class="link">Crear cuenta</p>
   </div>
 `;
 const loginForm = document.getElementById('login-form');
@@ -32,7 +32,7 @@ loginForm.addEventListener('submit', (e) => {
 
   login(email, password)
     .then((response) => {
-      window.location('reunion.html');
+      location.href = 'reunion.html';
     })
     .catch((err) => {
       const errorMessage = err.message;
