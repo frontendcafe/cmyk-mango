@@ -1,0 +1,96 @@
+.form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 200px;
+}
+
+.form-title {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 290px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.register {
+  text-align: left;
+}
+
+.register-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-dark);
+}
+
+.register-input {
+  width: 100%;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: 0px;
+  margin: 18px 0px 18px 0px;
+  border-bottom: 1px solid var(--secondary-dark);
+}
+
+::-ms-reveal {
+  display:none;
+}
+
+.password-reveal{
+  color: var(--primary-dark);
+  position: relative;
+  left: 215px;
+  top: 15px;
+  display: in-line;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.form-button {
+  border: none;
+  width: 146px;
+  height: 50px;
+  border-radius: 64px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  background: var(--secondary);
+  margin: 51px 0;
+  font-weight:bold;
+  font-size: 18px;
+}
+
+.form-footer {
+  font-size: 16px;
+}
+
+.to-login {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-dark);
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+  .form-title {
+    font-size: 24px;
+  }
+
+  .register-label {
+    font-size: 16px;
+  }
+}
