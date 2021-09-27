@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/fecha.css" />
+    <link rel="stylesheet" href="css/calendario.css" />
+    <title>Fecha</title>
+  </head>
+  <body>
+    <div class="fecha-container">
+      <div class="back">
+        <img src="./assets/img/back.svg" alt="atras" />Atrás
+      </div>
+      <form>
+        <h1 class="title">Selecciona el día</h1>
+        <div class="calendario" id="calendario">
+          <!-- Falta implementar -->
+        </div>
+        <div class="horarios">
+          <main>
+            <h2 class="horarios-title">
+              Estas son las mejores opciones para tu reunión, selecciona las que
+              quieras enviar a tus invitades
+            </h2>
+
+            <div class="votation">
+              <div class="country-option">
+                <div class="space"></div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>Buenos Aires, Argentina</p>
+                </div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>San José, Costa Rica</p>
+                </div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>Berlín, Alemania</p>
+                </div>
+              </div>
+              <div class="time-option">
+                <input
+                  type="radio"
+                  id="this"
+                  name="this"
+                  value="this"
+                  checked
+                />
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+              </div>
+              <div class="time-option">
+                <input
+                  type="radio"
+                  id="this"
+                  name="this"
+                  value="this"
+                  checked
+                />
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="opciones">
+          <div class="ver-mas">Ver mas</div>
+          <button class="btn">Siguiente</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
