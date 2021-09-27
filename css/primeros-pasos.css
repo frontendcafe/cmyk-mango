@@ -36,6 +36,8 @@
   font-size: 1rem;
   font-weight: 100;
   padding: 0 30px;
+  margin-bottom: 25px;
+  justify-content: center;
 }
 
 .btn-yellow {
@@ -44,6 +46,7 @@
   padding: 13px;
   border: none;
   border-radius: 8px;
+  margin: 5px;
 }
 
 .btn-empty {
@@ -52,6 +55,7 @@
   background-color: transparent;
   padding: 13px;
   border-radius: 8px;
+  margin: 5px;
 }
 
 .btn-yellow:hover,
@@ -83,13 +87,17 @@
     grid-template-columns: 1fr 1fr;
   }
   .session {
+    display: flex;
     background-color: var(--white);
     padding: 0 5rem;
   }
   .session h4 {
     width: 90%;
-    margin-bottom: 50px;
     font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 50px auto;
+    justify-content: center;
   }
   .btn-yellow,
   .btn-empty {
