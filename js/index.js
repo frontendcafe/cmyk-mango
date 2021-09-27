@@ -34,9 +34,21 @@ window.onload = function () {
 
   // Funcionalidad menu en web "Mis Reuniones"
   const menuMisReuiones = document.getElementById('menu-mis-reuiones');
+  const login = document.getElementById('btn-login');
+  const registro = document.getElementById('btn-registro');
+  const crearCuenta = document.getElementById('crear-cuenta');
 
   menuMisReuiones.addEventListener('click', (e) => {
     e.preventDefault();
     mostrarSolo('no-meeting');
+  });
+  login.addEventListener('click', (e) => {
+    mostrarSolo('formulario-login');
+  });
+  registro.addEventListener('click', (e) => {
+    mostrarSolo('formulario-registro');
+  });
+  crearCuenta.addEventListener('click', (e) => {
+    mostrarSolo('formulario-registro');
   });
 };
