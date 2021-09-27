@@ -58,8 +58,6 @@ selectElement.addEventListener('change', async (event) => {
 
         const listOfMeetings = await getMeetings({ month: `${year}-${selectedMonth}` });
 
-        console.log(listOfMeetings);
-
         if (listOfMeetings.meetings.length > 0) {
             listOfMeetings.meetings.forEach((meeting)=>{
                 concatenatedMeetings = concatenatedMeetings + /*html*/`<div class="meeting-item" id="meeting-item">
