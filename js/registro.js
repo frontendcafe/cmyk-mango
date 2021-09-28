@@ -1,4 +1,4 @@
-const formularioRegistro = document.getElementById("formulario-registro");
+const formularioRegistro = document.getElementById('formulario-registro');
 formularioRegistro.innerHTML = /* html */ `
   <div class="form-header">
     <h1 class="form-title">Bienvenidx a Mango</h3>
@@ -24,7 +24,7 @@ formularioRegistro.innerHTML = /* html */ `
 
 `;
 
-const passwordReveal = document.querySelector(".password-reveal")
+const passwordReveal = document.querySelector('.password-reveal');
 passwordReveal.addEventListener('click', () => {
   const passwordInput = document.querySelector('#password-input');
   const showPassword = document.querySelector('.fa-eye');
@@ -32,9 +32,8 @@ passwordReveal.addEventListener('click', () => {
   if (passwordInput.type === 'password') {
     showPassword.classList.add('hide');
     hidePassword.classList.remove('hide');
-    passwordInput.type = 'text'
-  } 
-  else {
+    passwordInput.type = 'text';
+  } else {
     showPassword.classList.remove('hide');
     hidePassword.classList.add('hide');
     passwordInput.type = 'password';

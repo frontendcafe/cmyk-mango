@@ -6,7 +6,7 @@
 }
 
 .form-title {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
@@ -42,10 +42,10 @@
 }
 
 ::-ms-reveal {
-  display:none;
+  display: none;
 }
 
-.password-reveal{
+.password-reveal {
   color: var(--primary-dark);
   position: relative;
   left: 215px;
@@ -67,7 +67,7 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   background: var(--secondary);
   margin: 51px 0;
-  font-weight:bold;
+  font-weight: bold;
   font-size: 18px;
 }
 

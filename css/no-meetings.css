@@ -1,9 +1,16 @@
 .welcome {
-  background-color: var(--white);
 }
 
 .container.brand {
-  display: none;
+  display: flex;
+  background-color: var(--secondary);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.session {
+  background-color: var(--secondary);
+  justify-content: flex-start;
 }
 
 .no-meeting {
@@ -65,6 +72,11 @@
   }
   .container.brand {
     display: flex;
+    justify-content: center;
+  }
+  .session {
+    background-color: var(--white);
+    justify-content: center;
   }
   .no-meeting {
     background-color: var(--white);
