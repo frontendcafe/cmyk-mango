@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="./css/primeros-pasos.css" />
     <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/registro.css" />
-    <link rel="stylesheet" href="./css/no-meetings.css" />
 
     <title>Mango</title>
   </head>
@@ -36,15 +35,16 @@
       <div class="session">
         <div id="inicio">
           <h4>Organiza tus reuniones de una manera fácil y rápida</h4>
-          <button class="btn-yellow">INICIAR SESIÓN</button>
-          <button class="btn-empty">REGISTRARSE</button>
+
+          <button class="btn-yellow" id="btn-login">INICIAR SESIÓN</button>
+          <button class="btn-empty" id="btn-registro">REGISTRARSE</button>
         </div>
 
         <div id="formulario-login">Login</div>
 
-        <div id="formulario-registro">Registro</div>
+        <div class="formulario-registro" id="formulario-registro">Registro</div>
 
-        <div class="no-meeting" id="no-meeting"></div>
+        <div id="no-meeting"></div>
       </div>
     </main>
 
@@ -60,6 +60,5 @@
     <script src="./js/index.js" type="module"></script>
     <script src="./js/login.js" type="module"></script>
     <script src="./js/registro.js" type="module"></script>
-    <script src="./js/no-meetings.js" type="module"></script>
   </body>
 </html>

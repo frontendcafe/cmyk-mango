@@ -31,4 +31,18 @@ window.onload = function () {
   });
 
   mostrarSolo('inicio');
+
+  const login = document.getElementById('btn-login');
+  const registro = document.getElementById('btn-registro');
+  const crearCuenta = document.getElementById('crear-cuenta');
+
+  login.addEventListener('click', (e) => {
+    mostrarSolo('formulario-login');
+  });
+  registro.addEventListener('click', (e) => {
+    mostrarSolo('formulario-registro');
+  });
+  crearCuenta.addEventListener('click', (e) => {
+    mostrarSolo('formulario-registro');
+  });
 };
