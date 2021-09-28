@@ -59,9 +59,8 @@
 }
 
 .country-option {
-  display: grid;
+  display: flex;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .line {
@@ -81,6 +80,7 @@
   color: var(--white);
   border-radius: 6px;
   font-size: 0.5rem;
+  flex-grow: 1;
 }
 .country p {
   text-align: center;
@@ -90,9 +90,8 @@
   padding: 10px;
 }
 .time-option {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  gap: 15px;
   align-items: flex-start;
   padding: 10px 0;
 }
@@ -178,7 +177,11 @@
     gap: 1rem;
   }
   .country-option {
-    grid-template-columns: 1fr 1fr 1fr 60px;
+    display: flex;
+    gap: 15px;
+  }
+  .country {
+    flex-grow: 1;
   }
   .space {
     display: flex;
@@ -189,11 +192,19 @@
     color: var(--black);
     text-align: center;
     vertical-align: middle;
+    max-width: 60px;
     order: 9999;
   }
   .time-option {
-    grid-template-columns: 1fr 1fr 1fr 60px;
+    display: flex;
+    gap: 15px;
   }
+  .time {
+    flex-grow: 1;
+  }
+  .label-option {
+  }
+
   .flecha {
     grid-column: auto;
     justify-self: center;
