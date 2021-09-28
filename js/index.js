@@ -31,12 +31,4 @@ window.onload = function () {
   });
 
   mostrarSolo('inicio');
-
-  // Funcionalidad menu en web "Mis Reuniones"
-  const menuMisReuiones = document.getElementById('menu-mis-reuiones');
-
-  menuMisReuiones.addEventListener('click', (e) => {
-    e.preventDefault();
-    mostrarSolo('no-meeting');
-  });
 };
