@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/descripcion.css" />
     <link rel="stylesheet" href="./css/fecha.css" />
+    <link rel="stylesheet" href="./css/ubicacion.css" />
     <link rel="stylesheet" href="./css/calendario.css" />
     <link rel="stylesheet" href="./css/navegacion.css" />
     <link rel="stylesheet" href="./css/navegacion-mobile.css" />
@@ -29,6 +30,24 @@
   </head>
   <body>
     <div id="navigation"></div>
+    <div>
+      <main class="ubicacion-container">
+        <div class="ubicacion">
+          <h1 class="ubicacion-title">Nueva Reunion</h1>
+          <p class="ubicacion-description">Las localidades que elegiste son:</p>
+          <div class="choice">Buenos Aires, Argentina</div>
+          <div class="choice">Berlín, Alemania</div>
+          <div class="choice">San José, Costa Rica</div>
+        </div>
+        <div class="brand">
+          <img
+            class="img-logo"
+            src="../assets/img/mundo_mango.png"
+            alt="mundo"
+          />
+        </div>
+      </main>
+    </div>
     <div class="fecha-container">
       <div class="back">
         <img src="./assets/img/back.svg" alt="atras" />Atrás
@@ -200,6 +219,7 @@
 
       <button class="btn-description">Siguiente</button>
     </div>
+
     <div id="mobile-navigation" class="footer sticky"></div>
 
     <!-- Scripts -->
