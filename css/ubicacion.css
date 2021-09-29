@@ -1,0 +1,66 @@
+.ubicacion-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: var(--white);
+  align-content: center;
+  justify-content: center;
+}
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.ubicacion-title {
+  font-family: Reem Kufi;
+  font-weight: normal;
+  font-size: 48px;
+  color: #22302c;
+}
+.ubicacion-description {
+  font-weight: normal;
+  font-size: 28px;
+
+  color: #22302c;
+}
+.choice {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3c9191;
+}
+.img-logo {
+  width: 60%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .img-logo {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .ubicacion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: var(--white);
+    padding-top: 300px;
+  }
+  .ubicacion {
+    background-color: var(--white);
+    padding: 0 2rem;
+  }
+  .img-logo {
+    max-width: 450px;
+  }
+}
