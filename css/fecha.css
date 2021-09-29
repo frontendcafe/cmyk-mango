@@ -19,6 +19,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 150px;
 }
 .title {
   font-family: Reem Kufi;
