@@ -20,11 +20,170 @@
     <!-- Estilos-->
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/descripcion.css" />
+    <link rel="stylesheet" href="./css/fecha.css" />
+    <link rel="stylesheet" href="./css/calendario.css" />
     <link rel="stylesheet" href="./css/navegacion-mobile.css" />
 
     <title>Mango</title>
   </head>
   <body>
+    <div class="fecha-container">
+      <div class="back">
+        <img src="./assets/img/back.svg" alt="atras" />Atrás
+      </div>
+      <form>
+        <div class="fecha-section">
+          <h1 class="title">Selecciona el día</h1>
+
+          <div class="calendar" id="calendar">
+            <div class="calendar__header">
+              <button type="button" class="control control--prev">&lt;</button>
+              <span class="month-name">Septiembre</span>
+              <button type="button" class="control control--next">&gt;</button>
+            </div>
+            <div class="calendar_body">
+              <div class="grid">
+                <div class="grid__header">
+                  <span class="grid__cell grid__cell--gh">S</span>
+                  <span class="grid__cell grid__cell--gh">M</span>
+                  <span class="grid__cell grid__cell--gh">T</span>
+                  <span class="grid__cell grid__cell--gh">W</span>
+                  <span class="grid__cell grid__cell--gh">T</span>
+                  <span class="grid__cell grid__cell--gh">F</span>
+                  <span class="grid__cell grid__cell--gh">S</span>
+                </div>
+                <div class="grid__body">
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled">
+                    1</span
+                  >
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled">
+                    2</span
+                  >
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled">
+                    3</span
+                  >
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled">
+                    4</span
+                  >
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled">
+                    5</span
+                  >
+                  <span class="grid__cell grid__cell--gd grid__cell--selected"
+                    >6</span
+                  >
+                  <span class="grid__cell grid__cell--gd">7</span>
+                  <span class="grid__cell grid__cell--gd">8</span>
+                  <span class="grid__cell grid__cell--gd">9</span>
+                  <span class="grid__cell grid__cell--gd">10</span>
+                  <span class="grid__cell grid__cell--gd">11</span>
+                  <span class="grid__cell grid__cell--gd">12</span>
+                  <span class="grid__cell grid__cell--gd">13</span>
+                  <span class="grid__cell grid__cell--gd">14</span>
+                  <span class="grid__cell grid__cell--gd">15</span>
+                  <span class="grid__cell grid__cell--gd">16</span>
+                  <span class="grid__cell grid__cell--gd">17</span>
+                  <span class="grid__cell grid__cell--gd">18</span>
+                  <span class="grid__cell grid__cell--gd">19</span>
+                  <span class="grid__cell grid__cell--gd">20</span>
+                  <span class="grid__cell grid__cell--gd">21</span>
+                  <span class="grid__cell grid__cell--gd">22</span>
+                  <span class="grid__cell grid__cell--gd">23</span>
+                  <span class="grid__cell grid__cell--gd">24</span>
+                  <span class="grid__cell grid__cell--gd">25</span>
+                  <span class="grid__cell grid__cell--gd">26</span>
+                  <span class="grid__cell grid__cell--gd">27</span>
+                  <span class="grid__cell grid__cell--gd">28</span>
+                  <span class="grid__cell grid__cell--gd">29</span>
+                  <span class="grid__cell grid__cell--gd">30</span>
+                  <span class="grid__cell grid__cell--gd">31</span>
+                  <span class="grid__cell grid__cell--gd">32</span>
+                  <span class="grid__cell grid__cell--gd">33</span>
+                  <span class="grid__cell grid__cell--gd">34</span>
+                  <span class="grid__cell grid__cell--gd grid__cell--disabled"
+                    >35</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-hidden">Siguiente</button>
+        </div>
+
+        <div class="horario-section">
+          <main>
+            <h2 class="horarios-title">
+              Estas son las mejores opciones para tu reunión, selecciona las que
+              quieras enviar a tus invitades
+            </h2>
+
+            <div class="votation">
+              <div class="country-option">
+                <div class="space"></div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>Buenos Aires, Argentina</p>
+                </div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>San José, Costa Rica</p>
+                </div>
+                <div class="country">
+                  <img src="assets/img/clock.svg" alt="icono reloj" />
+                  <p>Berlín, Alemania</p>
+                </div>
+              </div>
+              <div class="time-option">
+                <input
+                  type="radio"
+                  id="this"
+                  name="this"
+                  value="this"
+                  checked
+                />
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+              </div>
+              <div class="time-option">
+                <input
+                  type="radio"
+                  id="this"
+                  name="this"
+                  value="this"
+                  checked
+                />
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">11.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+                <div class="time">
+                  <div class="line"></div>
+                  <div class="hour">12.00 hrs</div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="opciones">
+          <div class="ver-mas">Ver más</div>
+          <button class="btn">Siguiente</button>
+        </div>
+      </form>
+    </div>
+
     <div class="container description">
       <h1>Describe tu reunión</h1>
 
