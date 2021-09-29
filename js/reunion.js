@@ -23,21 +23,24 @@ function buildInfo(info) {
 
   reunionTitle.innerHTML = title;
   countries.map((country) => {
+    let splitPais = country.split('/');
+    let pais = splitPais.pop();
     countryOption.innerHTML += `<div class="country">
         <img src="assets/img/clock.svg" alt="icono reloj" />
-        <p>${country}</p>
+        <p>${pais}</p>
       </div>`;
   });
 
   opcionesHoras.map((option, index) => {
     timeOptions.innerHTML += `<label class="label-option" for="opcion${
       index + 1
-    }">Opción ${index + 1}<div class="time-option"><div class="flecha">${
-      option.votes
-    }/${participants.length}</div>`;
-    let timeOption = document.querySelector('.time-option');
+    }">Opción ${index + 1}`;
+
+    const timeOption = document.createElement('div');
+    timeOption.classList.add('time-option');
+    timeOptions.appendChild(timeOption);
+
     option.hours.map((elemento) => {
-      console.log(elemento);
       timeOption.innerHTML += `
           <div class="time">
             <div class="line"></div>
@@ -45,7 +48,7 @@ function buildInfo(info) {
           </div>
           `;
     });
-    timeOptions.innerHTML += `
-    </div>`;
+    timeOption.innerHTML += `
+        <div class="flecha">${option.votes}/${participants.length}</div>`;
   });
 }

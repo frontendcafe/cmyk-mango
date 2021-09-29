@@ -31,7 +31,16 @@
 }
 
 .space {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 6px;
+  color: var(--black);
+  text-align: center;
+  vertical-align: middle;
+  max-width: 60px;
+  order: 9999;
 }
 
 .flecha {
@@ -44,6 +53,7 @@
   justify-content: center;
   align-items: center;
   grid-column: 2 / 3;
+  max-width: 60px;
 }
 
 .flecha:after {
@@ -91,8 +101,9 @@
 }
 .time-option {
   display: flex;
+
   gap: 15px;
-  align-items: flex-start;
+  align-items: center;
   padding: 10px 0;
 }
 
@@ -100,6 +111,7 @@
   gap: 0.5rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .hour {
@@ -183,18 +195,7 @@
   .country {
     flex-grow: 1;
   }
-  .space {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary);
-    border-radius: 6px;
-    color: var(--black);
-    text-align: center;
-    vertical-align: middle;
-    max-width: 60px;
-    order: 9999;
-  }
+
   .time-option {
     display: flex;
     gap: 15px;
