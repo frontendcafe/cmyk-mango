@@ -21,7 +21,6 @@ body {
 }
 
 .description h1 {
-  position: absolute;
   top: 645px;
   height: 28px;
   font-family: Reem Kufi;
@@ -33,7 +32,6 @@ body {
 }
 
 .description-details {
-  position: absolute;
   top: 710px;
   width: 90%;
   height: 328px;
@@ -63,7 +61,6 @@ body {
 }
 
 .description button {
-  position: absolute;
   top: 1063px;
   justify-content: center;
   align-items: center;
@@ -79,7 +76,6 @@ body {
 
 @media (min-width: 992px) {
   .description h1 {
-    position: absolute;
     height: 56px;
     top: 1074px;
     font-size: 48px;
@@ -87,7 +83,6 @@ body {
   }
 
   .description-details {
-    position: absolute;
     top: 1205px;
     width: 800px;
     height: 328px;
@@ -102,7 +97,6 @@ body {
   }
 
   .description button {
-    position: absolute;
     top: 1608px;
   }
 }
