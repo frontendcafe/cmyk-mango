@@ -10,10 +10,8 @@ body {
 }
 
 .container-empty {
-  position: absolute;
   width: 100%;
   height: 160px;
-  top: 60px;
   background: #62cbc5;
 }
 
@@ -27,15 +25,22 @@ body {
   position: absolute;
   width: 208px;
   height: 171px;
-  top: 119px;
+  top: 70px;
 }
 
 .logotipo-desktop {
   display: none;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
 .acerca-de h1 {
-  position: absolute;
   width: 223px;
   height: 30px;
   top: 290px;
@@ -52,31 +57,21 @@ body {
 }
 
 .acerca-de h2 {
-  position: absolute;
-  width: 320px;
-  height: 84px;
-  top: 374px;
   font-family: Reem Kufi;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   color: #000000;
+  text-align: center;
 }
 
 .logotipo-fec-square {
-  position: absolute;
   width: 100px;
   height: 100px;
-  top: 512px;
 }
 
 .acerca-de h3 {
-  position: absolute;
   width: 208px;
   height: 33px;
   top: 624px;
@@ -92,78 +87,51 @@ body {
   color: #000000;
 }
 
-.card-mob {
-  position: absolute;
+.cards {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  max-width: 500px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  top: 735px;
-  width: 204px;
-  height: 226px;
+  padding: 2rem;
+  width: 100%;
   background: #fffef5;
   border: 2px solid #3c9191;
   box-sizing: border-box;
   border-radius: 16px;
+  width: 100%;
 }
 
-.card-mob h4 {
+.card h4 {
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
   line-height: 35px;
   display: flex;
-  color: #22302c;
-}
-
-.container-card-mob p {
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-.card-name-mob {
-  width: 188px;
+  color: #62cbc5;
   border-bottom: 1px solid #62cbc5;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 16px 0px;
 }
 
-.card-area-mob {
+.card-name {
   width: 188px;
-  height: 33px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #3c9191;
-}
-
-.card-desktop {
-  display: none;
+  margin: 16px 0px;
+  text-align: center;
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
   .container-empty {
-    position: absolute;
     height: 305px;
-    top: 97px;
   }
 
   .logotipo-mob {
@@ -173,34 +141,29 @@ body {
   .logotipo-desktop {
     position: absolute;
     display: flex;
-    top: 142px;
+    top: 100px;
+  }
+
+  .intro {
+    margin-top: 10rem;
+    max-width: 650px;
   }
 
   .acerca-de h1 {
-    position: absolute;
-    width: 315px;
-    height: 61px;
-    top: 495px;
     font-size: 48px;
     line-height: 22px;
   }
 
   .acerca-de h2 {
-    position: absolute;
-    width: 672px;
-    height: 111px;
-    top: 657px;
     font-size: 38px;
     line-height: 55px;
   }
 
   .logotipo-fec-square {
-    position: absolute;
     top: 813px;
   }
 
   .acerca-de h3 {
-    position: absolute;
     width: 208px;
     height: 33px;
     top: 925px;
@@ -211,67 +174,15 @@ body {
     line-height: 32px;
   }
 
-  .card-mob {
-    display: none;
+  .cards {
+    max-width: 700px;
   }
-
-  .card-desktop {
-    position: absolute;
-    display: flex;
-    width: 796px;
-    height: 133px;
-    top: 1049px;
-    background: #fefefe;
-    border: 2px solid #3c9191;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-  }
-
-  .card-desktop h4 {
-    position: absolute;
-    left: 34px;
-    right: 607px;
-    top: 8px;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 35px;
-    display: flex;
-    align-items: center;
-    color: #22302c;
-  }
-
-  .container-card-desktop {
-    display: flex;
+  .card {
     flex-direction: row;
-    align-content: space-around;
-    align-items: center;
+    justify-content: space-between;
   }
-
-  .container-card-desktop p {
-    width: 265px;
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card-name-desktop {
-    border-right: 1px solid #62cbc5;
-    height: 80px;
-    align-items: center;
-  }
-
-  .card-area-desktop {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #3c9191;
+  .card h4 {
+    border-bottom: none;
+    text-align: left;
   }
 }
