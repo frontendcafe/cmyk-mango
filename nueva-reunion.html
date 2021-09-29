@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Work+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/fecha.css" />
-    <link rel="stylesheet" href="css/calendario.css" />
-    <title>Fecha</title>
+
+    <!-- Estilos-->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/descripcion.css" />
+    <link rel="stylesheet" href="./css/fecha.css" />
+    <link rel="stylesheet" href="./css/calendario.css" />
+    <link rel="stylesheet" href="./css/navegacion-mobile.css" />
+
+    <title>Mango</title>
   </head>
   <body>
     <div class="fecha-container">
@@ -170,5 +183,24 @@
         </div>
       </form>
     </div>
+
+    <div class="container description">
+      <h1>Describe tu reunión</h1>
+
+      <div class="description-details">
+        <label>Título</label>
+        <input type="text" />
+        <label>Descripción</label>
+        <input type="text" />
+        <label>Observaciones</label>
+        <input type="text" />
+      </div>
+
+      <button class="btn-description">Siguiente</button>
+    </div>
+    <div id="mobile-navigation" class="footer sticky"></div>
+
+    <!-- Scripts -->
+    <script src="./js/navegacion-mobile.js" type="module"></script>
   </body>
 </html>
