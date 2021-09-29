@@ -3,11 +3,11 @@
 Mango es una app web para coordinar reuniones con personas de cualquier parte del mundo.
 
 App
-[Vercel] (https://cmyk-mango.vercel.app/)
+[Vercel](https://cmyk-mango.vercel.app/)
 
 
 Diseño
-[Figma] (https://www.figma.com/file/cv13MXRMnu8sKsXWmnvQvh/MANGO?node-id=33%3A2373)
+[Figma](https://www.figma.com/file/cv13MXRMnu8sKsXWmnvQvh/MANGO?node-id=33%3A2373)
 
 
 ## :toolbox: Tecnologías y herramientas
@@ -16,10 +16,10 @@ Las tecnologías usadas para este proyecto fueron Javascript Vanilla, Firebase p
 
 
 ## :jigsaw: Primeros pasos
-
+```
 git clone git@github.com:frontendcafe/cmyk-mango.git
 cd cmyk-mango
-
+```
 
 ## :open_file_folder: Requisitos
 
