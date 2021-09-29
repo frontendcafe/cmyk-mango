@@ -1,0 +1,183 @@
+.back {
+  display: flex;
+  align-self: flex-end;
+  color: var(--secondary-dark);
+}
+
+.fecha-container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.fecha-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.title {
+  font-family: Reem Kufi;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 24px;
+  align-self: flex-start;
+}
+
+.horarios-title {
+  font-family: Work Sans;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.votation {
+  margin-top: 2rem;
+  border: 1px solid #3c9090;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.country-option {
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 20px 1fr 1fr 1fr;
+}
+.time-option {
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 20px 1fr 1fr 1fr;
+  align-items: center;
+}
+.time-option input {
+  justify-self: flex-start;
+  width: 18px;
+}
+
+.line {
+  background-color: #4ecb71;
+  height: 24px;
+  border-radius: 8px;
+}
+
+.country {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--secondary-dark);
+  padding: 0.5rem 0.5rem;
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.country p {
+  text-align: center;
+}
+
+.time {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hour {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: small;
+}
+
+.ms {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 200;
+  color: var(--black);
+}
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ver-mas {
+  font-family: Work Sans;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--secondary);
+}
+.btn {
+  border: none;
+  background-color: var(--secondary);
+  min-width: 146px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+.btn-hidden {
+  display: none;
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .back {
+    display: none;
+  }
+  .fecha-container {
+    padding: 0;
+  }
+  .fecha-section {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 175px;
+    background-color: var(--primary);
+    border-radius: 16px;
+  }
+  .horario-section {
+    align-self: center;
+  }
+  .country-option {
+    gap: 0.5rem;
+  }
+  .time-option {
+    gap: 0.5rem;
+  }
+  .title {
+    align-self: center;
+    font-family: Reem Kufi;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 48px;
+    text-align: left;
+  }
+  .btn-hidden {
+    display: block;
+  }
+  .ver-mas {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .horarios-title {
+    font-size: 28px;
+
+    max-width: 802px;
+  }
+  .votation {
+    padding: 1rem;
+    gap: 2rem;
+  }
+}
