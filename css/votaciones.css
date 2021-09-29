@@ -145,6 +145,9 @@
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .container {
+      position: relative;
+  }
   .datos-reunion {
     margin: 0 auto;
     flex-direction: row;
@@ -172,6 +175,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .container {
+    position: relative;
+    top: 150px;
+  }
   .datos-reunion {
     max-width: 800px;
   }
