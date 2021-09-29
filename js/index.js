@@ -14,7 +14,7 @@ const ocultarTodo = (idsSecciones) => {
   });
 };
 
-const mostrarSolo = (mostrar) => {
+export const mostrarSolo = (mostrar) => {
   // noMeeting.style.display = "flex";
   // botonesSesion.style.display = "none";
   ocultarTodo(IDS_SECCIONES);
