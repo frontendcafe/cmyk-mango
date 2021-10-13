@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+// eslint-disable-next-line no-unused-vars
+import * as dayjsConfig from './config/dayjs';
+
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
