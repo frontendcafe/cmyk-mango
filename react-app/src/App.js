@@ -1,10 +1,20 @@
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+
+import { routes } from './router/routes';
+import { RouteWithSubRoutes } from './components/RouteWithSubRoutes';
 import './App.css';
 
 function App() {
   return (
-    <main>
-      <p>Hola mango!</p>
-    </main>
+    <Router>
+      <main>
+        <Switch>
+          {routes.map((route, i) => (
+            <RouteWithSubRoutes key={i} {...route} />
+          ))}
+        </Switch>
+      </main>
+    </Router>
   );
 }
 
