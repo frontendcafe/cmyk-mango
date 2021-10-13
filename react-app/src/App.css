@@ -1,3 +1,6 @@
+/* CSS reset */
+@import-normalize;
+
 .App {
   text-align: center;
 }
