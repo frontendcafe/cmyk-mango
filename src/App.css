@@ -1,2 +1,13 @@
 /* CSS reset */
 @import-normalize;
+
+:root {
+  --primary: #ffc324;
+  --primary-light: #f7d887;
+  --primary-dark: #b1830a;
+  --secondary: #62cbc5;
+  --secondary-light: #92d7d3;
+  --secondary-dark: #3c9191;
+  --black: #22302c;
+  --white: #fffef5;
+}
