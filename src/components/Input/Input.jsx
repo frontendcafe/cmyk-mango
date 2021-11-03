@@ -7,7 +7,7 @@ function Input(props) {
     <div>
       <label className={styles.label}>
         {props.text}
-        <input type={props.types} className={styles.input} />
+        <input type={props.typeName} className={styles.input} />
       </label>
     </div>
   );
