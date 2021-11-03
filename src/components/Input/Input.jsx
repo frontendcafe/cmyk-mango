@@ -4,12 +4,10 @@ import styles from './Input.module.css';
 
 function Input(props) {
   return (
-    <div>
-      <label className={styles.label}>
-        {props.text}
-        <input type={props.typeName} className={styles.input} />
-      </label>
-    </div>
+    <label className={styles.label}>
+      {props.text}
+      <input type={props.typeName} className={styles.input} />
+    </label>
   );
 }
 
