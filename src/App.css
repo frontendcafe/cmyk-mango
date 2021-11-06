@@ -11,3 +11,15 @@
   --black: #22302c;
   --white: #fffef5;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+}
