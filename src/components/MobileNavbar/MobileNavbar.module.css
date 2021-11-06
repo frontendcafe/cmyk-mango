@@ -1,0 +1,31 @@
+/* Footer */
+
+footer {
+  background-color: var(--primary);
+  height: 4rem;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  line-height: 14px;
+  color: var(--black);
+}
+
+footer .icons-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer .icons-footer .navbar-button {
+  color: var(--black);
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  footer {
+    display: none;
+  }
+}
