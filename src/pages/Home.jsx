@@ -5,7 +5,7 @@ export function Home() {
   return (<>
     <p>Hola mango!</p>
     <LinkComponent
-      href="/login"
+      to="/login"
       text="Login"
     />
   </>);
