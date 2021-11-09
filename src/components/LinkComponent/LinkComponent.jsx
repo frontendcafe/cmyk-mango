@@ -6,7 +6,7 @@ import styles from './LinkComponent.module.css';
 function LinkComponent (props) {
     return(
         <Link 
-            className={styles.login}
+            className={styles.link}
             to={props.to} 
             target={props.target || '_self'}
         >
