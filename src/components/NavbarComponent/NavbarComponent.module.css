@@ -1,0 +1,120 @@
+
+/* Un pading */
+.container {
+  padding: 0 2rem;
+}
+
+/* Barra de navegacion - Display para Dispositivos Moviles*/
+
+.nav {
+  background-color:#ffc324;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+/* Seccion - Opciones de Menu (Desplegable)*/
+
+/*Creo que esta propiedad se usa en el script para desplegar el menu*/
+.visible {
+  visibility: visible;
+}
+
+.items_nav {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  background-color: #fffef5;
+  
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  list-style: none;
+  padding-right: 2rem;
+}
+
+.menu_li {
+  border-bottom: 1px solid #62cbc5;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_li:last-child {
+  display: none;
+}
+
+.menu_li_a {
+  color: #3c9191;
+  text-decoration: none;
+}
+.menu_li_a:hover {
+  color: #22302c;
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+  /* Seccion - Opciones de Menu (Barra)*/
+  .items_nav {
+    display: flex;
+    visibility: visible;
+    background-color: #ffc324;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu_li {
+    display: flex;
+    border-bottom: none;
+    font-size: 16px;
+    padding: 0px;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+
+  .menu_li:first-child {
+    display: none;
+  }
+
+  .menu_li:last-child {
+    display: list-item;
+  }
+
+  .menu_li_a {
+    color: #22302c;
+    border-bottom: 2px solid transparent;
+  }
+
+  .menu_li_a:hover {
+    border-bottom: 2px solid #3c9191;
+  }
+
+  .menu_li_button {
+    width: 85px;
+    height: 34px;
+    left: 1191px;
+    background: #62cbc5;
+    border-radius: 16px;
+    display: list-item;
+    border: none;
+  }
+}
