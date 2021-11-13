@@ -6,9 +6,9 @@ import newMeeting from '../../assets/images/my-meetings.svg';
 import profile from '../../assets/images/profile.svg';
 import myMeetings from '../../assets/images/my-meetings.svg';
 
-function MobileNavbar() {
+function MobileNavbar(props) {
     return(
-        <footer>
+        <footer className={`${props.className}`}>
             <div className={ styles["icons-footer"] }>
                 <Link 
                     className={ styles["navbar-button"] }
