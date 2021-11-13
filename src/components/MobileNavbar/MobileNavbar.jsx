@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './MobileNavbar.module.css';
-import newMeeting from '../../assets/images/my-meetings.svg';
+import newMeeting from '../../assets/images/new-meeting.svg';
 import profile from '../../assets/images/profile.svg';
 import myMeetings from '../../assets/images/my-meetings.svg';
 
