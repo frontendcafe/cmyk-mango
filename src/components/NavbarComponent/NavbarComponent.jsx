@@ -37,17 +37,16 @@ function NavbarComponent() {
       {/* <!-- Nav --> */}
 
       {/* //La doble negación es para afirmar que no sólo exista, sino que sea true */}
-      {!!openMenu && (
-        <nav className={styles.nav}>
-          <ul className={styles.menu}>
-            <li><Link to="">Acerca del proyecto</Link></li>
-            <li><Link to="">Nueva Reunión</Link></li>
-            <li><Link to="">Mi perfil</Link></li>
-            <li><Link to="">Mis reuniones</Link></li>
-            <li><button>Log Out</button></li>
-          </ul>
-        </nav>
-      )}
+      <nav className={`${styles.nav} ${!!openMenu && (styles.visible)}`} >
+        <h2>MANGO</h2>
+        <ul className={styles.menu}>
+          <li><Link to="">Acerca del proyecto</Link></li>
+          <li><Link to="">Nueva Reunión</Link></li>
+          <li><Link to="">Mi perfil</Link></li>
+          <li><Link to="">Mis reuniones</Link></li>
+          <li><button>Log Out</button></li>
+        </ul>
+      </nav>
     </>
   );
 }

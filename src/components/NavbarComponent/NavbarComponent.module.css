@@ -17,22 +17,19 @@
 
 .nav {
   position: absolute;
-  /* visibility: hidden; */
+  visibility: hidden;
   right: 0;
   background-color: var(--white);
   width: 100%;
-}
-
-.icons-nav {
 }
 
 .nav h2 {
   visibility: hidden;
 }
 
-/* .visible {
+.visible {
   visibility: visible;
-} */
+}
 
 .menu {
   display: flex;
@@ -62,13 +59,6 @@
 .menu li a:hover {
   color: var(--black);
 }
-
-/* .items_nav {
-  position: absolute;
-  visibility: hidden;
-  right: 0;
-  background-color: #fffef5;
-} */
 
 /* Large devices (desktops, 992px and up) */
 
