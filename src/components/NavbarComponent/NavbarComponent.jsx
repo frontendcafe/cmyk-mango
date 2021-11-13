@@ -26,10 +26,12 @@ function NavbarComponent() {
       <header className={`${styles.container} ${styles.header}`}>
         <h2 className={styles.logo}>MANGO</h2>
         <div className={`${styles["icons-nav"]}`}>
-          <Link to=""
-            ><img src={bell} alt="Notificaciones"
-          /></Link>
-          <Link to="" onClick={onClickButton}><img src={menu} alt="Menu" /></Link>
+          <Link to="">
+            <img src={bell} alt="Notificaciones"/>
+          </Link>
+          <Link to="" onClick={onClickButton}>
+            <img src={menu} alt="Menu" />
+          </Link>
         </div>
       </header>
       {/* <!-- Nav --> */}
