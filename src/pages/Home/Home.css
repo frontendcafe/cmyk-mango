@@ -1,0 +1,9 @@
+#root header h2 + div {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #root nav {
+    display: none;
+  }
+}

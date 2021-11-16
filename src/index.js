@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import { MangoProvider } from './components/MangoContext/MangoContext'; 
 // eslint-disable-next-line no-unused-vars
 import * as dayjsConfig from './config/dayjs';
 
@@ -8,7 +9,9 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MangoProvider>
+      <App />
+    </MangoProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
