@@ -1,0 +1,15 @@
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-dark);
+}
+
+.input {
+  width: 100%;
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: 0px;
+  margin: 18px 0px 18px 0px;
+  border-bottom: 1px solid var(--secondary-dark);
+}
