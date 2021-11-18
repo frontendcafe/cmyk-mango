@@ -4,9 +4,9 @@ import { AuthLayout } from '../../components/AuthLayout/AuthLayout';
 
 //import styles from './Home.module.css';
 
-import './Home.css';
+import './Home2.css';
 
-export function Home() {
+export function Home2() {
   return (
     <>
       <NavbarComponent />
