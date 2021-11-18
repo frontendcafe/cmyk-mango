@@ -1,15 +1,16 @@
 import React from 'react';
+import { NavbarComponent } from '../../components/NavbarComponent/NavbarComponent';
+import { LinkComponent } from '../../components/LinkComponent/LinkComponent';
+import { CardMeeting } from '../../components/CardMeeting/CardMeeting'
+import { Message } from '../../components/Message/Message';
 
-import { NavbarComponent } from '../components/NavbarComponent/NavbarComponent';
-import { LinkComponent } from '../components/LinkComponent/LinkComponent';
-import { CardMeeting } from '../components/CardMeeting/CardMeeting'
-import { Message } from '../components/Message/Message';
+import { MobileNavbar } from '../../components/MobileNavbar/MobileNavbar';
 
+import styles from './Home.module.css';
 
 export function Home() {
   return (
     <>
-
       <NavbarComponent />
 
       <LinkComponent
@@ -29,6 +30,8 @@ export function Home() {
       <Message>
         <p> Ahora tus invitades tienen que elegir el mejor horario. Podés ver las votaciones en <span>“Mis reuniones”</span></p>
       </Message>
+
+      <MobileNavbar className={styles["sticky"]}/>
     </>
   );
 }
