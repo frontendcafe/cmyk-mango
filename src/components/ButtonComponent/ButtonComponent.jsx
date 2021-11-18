@@ -8,4 +8,4 @@ const ButtonComponent = ({ name }) => {
   );
 };
 
-export default ButtonComponent;
+export { ButtonComponent };

@@ -3,6 +3,8 @@ import { NavbarComponent } from '../../components/NavbarComponent/NavbarComponen
 import { LinkComponent } from '../../components/LinkComponent/LinkComponent';
 import { CardMeeting } from '../../components/CardMeeting/CardMeeting'
 import { Message } from '../../components/Message/Message';
+import { ButtonComponent } from '../../components/ButtonComponent/ButtonComponent'
+import { Input } from '../../components/Input/Input';
 
 import { MobileNavbar } from '../../components/MobileNavbar/MobileNavbar';
 
@@ -30,6 +32,10 @@ export function Home() {
       <Message>
         <p> Ahora tus invitades tienen que elegir el mejor horario. Podés ver las votaciones en <span>“Mis reuniones”</span></p>
       </Message>
+      
+      <ButtonComponent name="Prueba" />
+
+      <Input />
 
       <MobileNavbar className={styles["sticky"]}/>
     </>
