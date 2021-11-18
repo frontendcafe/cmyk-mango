@@ -1,6 +1,7 @@
 import React from 'react';
 import { LinkComponent } from '../components/LinkComponent/LinkComponent';
 import { CardMeeting } from '../components/CardMeeting/CardMeeting'
+import { Message } from '../components/Message/Message';
 
 export function Home() {
   return (
@@ -19,6 +20,9 @@ export function Home() {
         voteUrl=""
         detailsUrl=""
       />
+      <Message>
+        <p> Ahora tus invitades tienen que elegir el mejor horario. Podés ver las votaciones en <span>“Mis reuniones”</span></p>
+      </Message>
     </>
   );
 }
