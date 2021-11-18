@@ -30,11 +30,11 @@ function CardMeeting (props) {
                         props.votes !== undefined
                         ? props.votes > 0
                             ? <p className={styles["votes"]}>{props.votes} <br />votos</p>
-                            : <a id="vote" href={props.voteUrl}><img src={check} alt="" /></a>
-                        : <a id="vote" href={props.voteUrl}><img src={check} alt="" /></a>
+                            : <a id="vote" href={props.voteUrl}><img src={check} alt="Votar" /></a>
+                        : <a id="vote" href={props.voteUrl}><img src={check} alt="Votar" /></a>
                     }
                     <a id="more" href={props.detailsUrl}>
-                        <img src={arrow} alt="" />                  
+                        <img src={arrow} alt="Detalles" />                  
                     </a>
                 </div>
             </div>

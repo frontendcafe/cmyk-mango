@@ -4,7 +4,6 @@ import { CardMeeting } from '../components/CardMeeting/CardMeeting'
 export function Home() {
   return (
     <>
-      <p>Hola mango!</p>
       <CardMeeting 
         dateTime="17 - septiembre, 2021"
         title="Reunión de ideas"
