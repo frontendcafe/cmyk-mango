@@ -1,13 +1,9 @@
-
-/* Un pading */
 .container {
   padding: 0 2rem;
 }
 
-/* Barra de navegacion - Display para Dispositivos Moviles*/
-
-.nav {
-  background-color:#ffc324;
+.header {
+  background-color: var(--primary);
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -19,19 +15,20 @@
   font-family: 'Reem Kufi', sans-serif;
 }
 
-/* Seccion - Opciones de Menu (Desplegable)*/
-
-/*Creo que esta propiedad se usa en el script para desplegar el menu*/
-.visible {
-  visibility: visible;
-}
-
-.items_nav {
+.nav {
   position: absolute;
   visibility: hidden;
   right: 0;
-  background-color: #fffef5;
-  
+  background-color: var(--white);
+  width: 100%;
+}
+
+.nav h2 {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .menu {
@@ -40,36 +37,70 @@
   align-items: flex-end;
   gap: 1rem;
   list-style: none;
-  padding-right: 2rem;
+  padding: 2rem;
 }
 
-.menu_li {
-  border-bottom: 1px solid #62cbc5;
+.menu li {
+  border-bottom: 1px solid var(--secondary);
   padding-bottom: 1rem;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-.menu_li:last-child {
+.menu li:last-child {
   display: none;
 }
 
-.menu_li_a {
-  color: #3c9191;
+.menu li a {
+  color: var(--secondary-dark);
   text-decoration: none;
 }
-.menu_li_a:hover {
-  color: #22302c;
+.menu li a:hover {
+  color: var(--black);
 }
-
-
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+  .header {
+    display: none;
+  }
 
-  /* Seccion - Opciones de Menu (Barra)*/
+  .nav {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    background-color: var(--primary);
+    align-items: center;
+  }
+
+  .nav h2 {
+    position: static;
+    height: 61px;
+    left: 90px;
+    top: 18px;
+
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 22px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+
+    color: #22302c;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 42px;
+
+    visibility: visible;
+  }
+
   .items_nav {
     display: flex;
     visibility: visible;
@@ -82,8 +113,9 @@
     align-items: center;
   }
 
-  .menu_li {
+  .menu li {
     display: flex;
+    padding-bottom: 1rem;
     border-bottom: none;
     font-size: 16px;
     padding: 0px;
@@ -91,24 +123,24 @@
     width: -moz-fit-content;
   }
 
-  .menu_li:first-child {
+  .menu li:first-child {
     display: none;
   }
 
-  .menu_li:last-child {
+  .menu li:last-child {
     display: list-item;
   }
 
-  .menu_li_a {
-    color: #22302c;
+  .menu li a {
+    color: var(--black);
     border-bottom: 2px solid transparent;
   }
 
-  .menu_li_a:hover {
-    border-bottom: 2px solid #3c9191;
+  .menu li a:hover {
+    border-bottom: 2px solid var(--secondary-dark);
   }
 
-  .menu_li_button {
+  .menu li button {
     width: 85px;
     height: 34px;
     left: 1191px;

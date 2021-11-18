@@ -1,11 +1,17 @@
 import React from 'react';
+
+import { NavbarComponent } from '../components/NavbarComponent/NavbarComponent';
 import { LinkComponent } from '../components/LinkComponent/LinkComponent';
 import { CardMeeting } from '../components/CardMeeting/CardMeeting'
 import { Message } from '../components/Message/Message';
 
+
 export function Home() {
   return (
     <>
+
+      <NavbarComponent />
+
       <LinkComponent
         to="/login"
         text="Login"
