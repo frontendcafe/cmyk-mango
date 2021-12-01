@@ -1,7 +1,6 @@
 .welcome {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
   background-color: var(--secondary);
   min-height: 100vh;
 }
@@ -25,7 +24,7 @@
 .session {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.2rem;
   font-weight: 400;
@@ -36,6 +35,41 @@
 
 .img-logo {
   width: 60%;
+}
+
+.title {
+  text-align: center;
+  word-wrap: initial;
+  font-size: 24px;
+}
+
+.btn {
+  color: var(--black);
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  width: 70%;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.btn:active {
+  background-color: var(--primary-light);
+}
+
+.btnLogin {
+  background-color: var(--primary);
+}
+
+.btnRegister {
+  background-color: transparent;
+  border: 1px solid var(--black);
+}
+
+.btnRegister:active {
+  background-color: white;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -50,8 +84,10 @@
   .welcome {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   .session {
+    justify-content: center;
     display: flex;
     background-color: var(--white);
     padding: 0 5rem;
