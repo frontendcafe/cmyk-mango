@@ -12,4 +12,18 @@
   outline: 0px;
   margin: 18px 0px 18px 0px;
   border-bottom: 1px solid var(--secondary-dark);
+  min-width: 300px;
+  width: 40%;
+}
+
+.input::placeholder {
+  color: var(--secondary-dark);
+  opacity: 100;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }
