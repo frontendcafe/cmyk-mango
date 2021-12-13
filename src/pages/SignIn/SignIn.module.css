@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Reem+Kufi&family=Work+Sans:wght@400;500;600&display=swap');
+
+.signin {
+  display: flex;
+  height: 100vh;
+}
+
+.header {
+  display: none;
+}
+
+.mangosection {
+  width: 50vw;
+  background-color: #62CBC5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.mangoimage {
+  height: 400px;
+  width: 400px;
+}
+
+.mangotitle {
+  font-family: Reem Kufi;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.formsection {
+  width: 50vw;
+  background-color: #FFFEF5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formtitle {
+  font-family: Reem Kufi;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #22302C;
+  margin-bottom: 50px;
+}
+
+.formsubtitle {
+  font-family: Work Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: center;
+  color:#3C9090;
+  margin-bottom: 50px;
+}
+
+.forgetpass {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #B1830A;
+  margin-top: 15px;
+}
+
+.haveacc {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #22302C;
+  display: inline-flex;
+}
+
+.createacc {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #B1830A;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .header {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    background-color: #FFC324;
+    padding: 20px;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+
+  }
+  .mangosection {
+    display: none;
+  }
+  .formsection {
+    width: 100vw;
+  }
+  .formtitle {
+    font-family: Reem Kufi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+  .formsubtitle {
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .haveacc {
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .createacc {
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

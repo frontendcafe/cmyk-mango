@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import { routes } from './router/routes';
+import { routes } from './routes/routes';
 import { RouteWithSubRoutes } from './components/RouteWithSubRoutes';
 import './App.css';
 
