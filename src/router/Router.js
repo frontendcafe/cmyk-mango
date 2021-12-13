@@ -1,5 +1,5 @@
 
-import { SignIn } from '../../src/pages/SignIn/SignIn';
+import { SignIn } from '../pages/SignIn/SignIn';
 import { Home } from '../pages/Home/Home';
 
   export const routes = [
