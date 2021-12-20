@@ -10,7 +10,7 @@ export function LogIn() {
     <div className={styles.signin}>
       <header className={styles.header}>Mango</header>
       <section className={styles.mangosection}>
-        <img src={mangoimage} alt="" className={styles.mangoimage}/>
+        <img src={mangoimage} alt="mango" className={styles.mangoimage}/>
         <h5 className={styles.mangotitle}>MANGO</h5>
       </section>
       <form className={styles.formsection}>
@@ -21,15 +21,15 @@ export function LogIn() {
         <a href="/forgetpass">
           <h4 className={styles.forgetpass}>Olvidaste tu contraseña?</h4>
         </a>
-        <a href="/">
+        <a href="/" className={styles.tologin}>
           <ButtonComponent name="Log in"/>
         </a>
         <h4 className={styles.haveacc}>
           ¿No tenés cuenta?  
-          <a href="/login">
+          <a href="/signin">
             <h5 className={styles.createacc}>
               Crear cuenta
-            </h5> 
+            </h5>
           </a>
         </h4>
       </form>
