@@ -1,11 +1,11 @@
 import React from 'react';
 import { ButtonComponent } from '../../components/ButtonComponent/ButtonComponent';
 import { Input } from '../../components/Input/Input';
-import styles from './SignIn.module.css'
+import styles from './LogIn.module.css'
 
 import mangoimage from '../../assets/images/mango.svg'
 
-export function SignIn() {
+export function LogIn() {
   return (
     <div className={styles.signin}>
       <header className={styles.header}>Mango</header>
@@ -36,4 +36,3 @@ export function SignIn() {
     </div>
   );
 }
-
