@@ -75,32 +75,12 @@ export function LogIn() {
     <div className={styles.signin}>
       <header className={styles.header}>Mango</header>
       <section className={styles.mangosection}>
-<<<<<<< HEAD
-        <img src={mangoimage} alt="mango" className={styles.mangoimage}/>
-=======
         <img src={mangoimage} alt="mango" className={styles.mangoimage} />
->>>>>>> develop
         <h5 className={styles.mangotitle}>MANGO</h5>
       </section>
       <form className={styles.formsection}>
         <h2 className={styles.formtitle}>¡Bienvenidx!</h2>
         <h3 className={styles.formsubtitle}>Ingresa a tu cuenta</h3>
-<<<<<<< HEAD
-        <Input placeholder="Correo electrónico"/>
-        <Input placeholder="Contraseña"/>
-        <a href="/forgetpass">
-          <h4 className={styles.forgetpass}>Olvidaste tu contraseña?</h4>
-        </a>
-        <a href="/">
-          <ButtonComponent name="Log in"/>
-        </a>
-        <h4 className={styles.haveacc}>
-          ¿No tenés cuenta?  
-          <a href="/login">
-            <h5 className={styles.createacc}>
-              Crear cuenta
-            </h5>
-=======
         <Input
           typeName="email"
           handle={handleChangeEmail}
@@ -122,14 +102,9 @@ export function LogIn() {
           <a href="/signin">
             {console.log(process.env.REACT_APP_FIREBASE_APIKEY)}
             <h5 className={styles.createacc}>Crear cuenta</h5>
->>>>>>> develop
           </a>
         </h4>
       </form>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> develop
