@@ -42,9 +42,24 @@ export function LogIn() {
   const handleLogin = (e) => {
     e.preventDefault();
     const { email, password } = credentials;
-    if (password.length < 6) {
-      console.log('no');
-      return null;
+    console.log(password.length < 8);
+    if (!email || !password || password.length < 8) {
+      return toast(
+        !email
+          ? {
+              title:
+                'El campo email no puede estar vacio o contener un espacio',
+              status: 'error',
+              duration: 1500,
+              isClosable: false,
+            }
+          : {
+              title: 'La contraseña debe contener al menos 8 caracteres',
+              status: 'error',
+              duration: 1500,
+              isClosable: false,
+            },
+      );
     } else {
       signInWithEmailAndPassword(auth, email, password)
         .then(() => {
@@ -52,7 +67,7 @@ export function LogIn() {
           toast({
             title: 'Logged',
             status: 'success',
-            duration: 2000,
+            duration: 1500,
             isClosable: false,
           });
         })
@@ -64,7 +79,7 @@ export function LogIn() {
           toast({
             title: `Credentials Error: ${error}`,
             status: 'error',
-            duration: 2000,
+            duration: 1500,
             isClosable: false,
           });
         });
@@ -100,7 +115,6 @@ export function LogIn() {
           {console.log(credentials)}
           ¿No tenés cuenta?
           <a href="/signin">
-            {console.log(process.env.REACT_APP_FIREBASE_APIKEY)}
             <h5 className={styles.createacc}>Crear cuenta</h5>
           </a>
         </h4>

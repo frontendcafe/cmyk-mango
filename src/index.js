@@ -7,11 +7,11 @@ import * as dayjsConfig from './config/dayjs';
 
 import App from './App';
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import { theme } from './theme/theme';
+import { theme } from './theme/theme.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ColorModeScript c/>
+    <ColorModeScript />
     <MangoProvider>
       <ChakraProvider theme={theme}>
         <App />
