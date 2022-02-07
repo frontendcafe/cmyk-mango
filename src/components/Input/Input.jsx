@@ -7,10 +7,9 @@ function Input(props) {
     <label className={styles.label}>
       {props.text}
       <input
-        onChange={props.handle}
         type={props.typeName}
         placeholder={props.placeholder}
-        className={styles.input}
+        className={`${styles.input} ${props.bigger ? `${styles.bigger}` : ''}`}
       />
     </label>
   );
