@@ -115,7 +115,6 @@ export function LogIn() {
           {console.log(credentials)}
           ¿No tenés cuenta?
           <a href="/signin">
-            {console.log(process.env.REACT_APP_FIREBASE_APIKEY)}
             <h5 className={styles.createacc}>Crear cuenta</h5>
           </a>
         </h4>
