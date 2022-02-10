@@ -10,6 +10,8 @@ function Input(props) {
         type={props.typeName}
         placeholder={props.placeholder}
         className={`${styles.input} ${props.bigger ? `${styles.bigger}` : ''}`}
+        onChange={props.handler}
+        name={props.name}
       />
     </label>
   );

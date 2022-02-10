@@ -63,13 +63,13 @@ export function LogIn() {
     } else {
       signInWithEmailAndPassword(auth, email, password)
         .then(() => {
-          push('/');
           toast({
             title: 'Logged',
             status: 'success',
             duration: 1500,
             isClosable: false,
           });
+          push('/');
         })
         .catch((err) => {
           const error = err
