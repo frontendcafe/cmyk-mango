@@ -1,0 +1,512 @@
+.confirmation {
+  background: #FFFEF5;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: #ffc324;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headertitle {
+  font-family: Reem Kufi;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-left: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.headericons {
+  display: none;
+}
+
+.headerlink {
+  display: flex;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.headerlink > h3 {
+  margin-left: 20px;
+  padding: 0 7px;
+}
+
+.headerlink > .dashed {
+  text-decoration: dashed;
+}
+
+.headerlink > .logout {
+  color: #22302C;
+  background-color:#62CBC5;
+  border-radius: 16px;
+  padding: 4px 8px;
+}
+
+.back {
+  display: none;
+}
+
+.title {
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+  font-family: Reem Kufi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 55px;
+  color: #22302C;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.jam {
+  display: flex;
+  flex-direction: column;
+  background: #FEFEFE;
+  border: 2px solid #3C9191;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.jamtextmovile {
+  display: none;
+}
+
+.jamtitle {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.jaminfo {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.jamtext {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 7px 15px;  
+}
+
+.jamtextdesktop {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 7px 15px;  
+}
+
+.line {
+  padding: 0 20px;
+}
+
+.jamdate {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3C9191;
+  padding: 0 20px;
+}
+
+.subtitle {
+  padding-top: 170px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.copyNShare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 750px;
+  align-items: center;
+  padding: 16px;
+  background: #FFFFFF;
+  margin-bottom: 70px;
+
+  border: 1px solid #FFC324;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.camp {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #22302C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.linkinput {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px 8px 8px;
+  position: static;
+  width: 706px;
+  height: 51px;
+  left: 0px;
+  top: 41px;
+  border: 1px solid #3C9191;
+  box-sizing: border-box;
+  border-radius: 16px;
+  flex-grow: 0;
+  margin: 8px 0px;
+  cursor: copy;
+}
+
+.linkinput::placeholder {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  color: #2684FC;
+}
+
+.shareicon {
+  position: absolute;
+  top: 717px;
+  right: calc(50% - 335px);
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px 8px 8px;
+  position: static;
+  width: 706px;
+  height: 51px;
+  left: 0px;
+  top: 41px;
+  border: 1px solid #3C9191;
+  box-sizing: border-box;
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.plusbutton {
+  font-family: Work Sans;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: absolute;
+  background: #FFC324;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 64px;
+  width: 18.33px;
+  height: 14.4px;
+  right: calc(50% - 350px);
+  bottom: 88px;
+  }
+
+.navbar {
+  display: none;
+}
+
+.confirmed {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmedmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmedtitle {
+  padding-bottom: 42px;
+  font-family: Reem Kufi;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 55px;
+  text-align: center;
+  color: #22302C;
+}
+
+.confirmedsection {
+  position: static;
+  width: 519px;
+  height: 329px;
+  left: 0px;
+  top: 106px;
+  background: #FEFEFE;
+  border: 1px solid #FFC324;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.confirmedtext {
+  margin: 95px 15px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  color: #22302C;
+}
+
+.confirmedtextorange {
+  color: #FFC324;
+}
+
+.confirmedbuttoncontainer {
+  padding-top: 51px;
+}
+
+@media (max-width: 875px) {
+
+  .confirmation {
+    overflow: auto;
+  }
+  .headertitle {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: none;
+    padding-left: 10px;
+  }
+
+  .headericons {
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .headericon {
+    width: 57%;
+    padding: 0 5px;
+  }
+
+  .headerlink {
+    display: none;
+  }
+
+  .back {
+    display: flex;
+    top: 87px;
+    right: 23px;
+    position: absolute;
+  }
+
+  .backtext {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    padding-left: 5px;
+    color: #3C9191;
+  }
+
+  .title {
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    padding-left: 40px;
+    justify-content: flex-start;
+  }
+
+  .jam {
+    background: none;
+  }
+
+  .jamtextmovile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 7px 15px;  
+  }
+
+  .jaminfo {
+    flex-direction: column;
+    padding: 15px 15px;
+  }
+
+  .jamtitle {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .jamtextdesktop {
+    display: none;
+  }
+
+  .jamdate {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .line {
+    transform: rotateZ(90deg);
+  }
+
+  .subtitle {
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .linkinput {
+    position: static;
+    width: 326px;
+    height: 50px;
+    left: 0px;
+    top: 22px;
+
+    background: #FEFEFE;
+    /* secundario oscuro */
+
+    border: 1px solid #3C9191;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+
+  .input {
+    position: static;
+    width: 326px;
+    height: 50px;
+    left: 0px;
+    top: 22px;
+    margin: 4px 0;
+
+    background: #FEFEFE;
+    /* secundario oscuro */
+
+    border: 1px solid #3C9191;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+
+  .copyNShare {
+    padding: 0;
+    background: none;
+    margin: 0;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .shareicon {
+    right: calc(50% - 150px);
+  }
+
+  .form {
+    margin-bottom: 40px;
+  }
+
+  .plusbutton {
+    right: calc(50% - 145px);
+    bottom: 140px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    height: 56px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #FFC324;
+  }
+
+  .navbarcamp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
